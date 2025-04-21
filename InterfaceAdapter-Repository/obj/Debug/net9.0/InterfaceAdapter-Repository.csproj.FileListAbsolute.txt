@@ -1,0 +1,42 @@
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture\InterfaceAdapter-Repository\bin\Debug\net9.0\InterfaceAdapter-Repository.deps.json
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture\InterfaceAdapter-Repository\bin\Debug\net9.0\InterfaceAdapter-Repository.dll
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture\InterfaceAdapter-Repository\bin\Debug\net9.0\InterfaceAdapter-Repository.pdb
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture\InterfaceAdapter-Repository\bin\Debug\net9.0\ApplicationLayer.dll
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture\InterfaceAdapter-Repository\bin\Debug\net9.0\EnterpriseLayer-Entities.dll
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture\InterfaceAdapter-Repository\bin\Debug\net9.0\InterfaceAdapters-Data.dll
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture\InterfaceAdapter-Repository\bin\Debug\net9.0\ApplicationLayer.pdb
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture\InterfaceAdapter-Repository\bin\Debug\net9.0\InterfaceAdapters-Data.pdb
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture\InterfaceAdapter-Repository\bin\Debug\net9.0\EnterpriseLayer-Entities.pdb
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture\InterfaceAdapter-Repository\obj\Debug\net9.0\InterfaceAdapter-Repository.csproj.AssemblyReference.cache
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture\InterfaceAdapter-Repository\obj\Debug\net9.0\InterfaceAdapter-Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture\InterfaceAdapter-Repository\obj\Debug\net9.0\InterfaceAdapter-Repository.AssemblyInfoInputs.cache
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture\InterfaceAdapter-Repository\obj\Debug\net9.0\InterfaceAdapter-Repository.AssemblyInfo.cs
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture\InterfaceAdapter-Repository\obj\Debug\net9.0\InterfaceAdapter-Repository.csproj.CoreCompileInputs.cache
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture\InterfaceAdapter-Repository\obj\Debug\net9.0\Interfac.9D7113D4.Up2Date
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture\InterfaceAdapter-Repository\obj\Debug\net9.0\InterfaceAdapter-Repository.dll
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture\InterfaceAdapter-Repository\obj\Debug\net9.0\refint\InterfaceAdapter-Repository.dll
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture\InterfaceAdapter-Repository\obj\Debug\net9.0\InterfaceAdapter-Repository.pdb
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture\InterfaceAdapter-Repository\obj\Debug\net9.0\ref\InterfaceAdapter-Repository.dll
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture\InterfaceAdapter-Repository\bin\Debug\net9.0\InterfaceAdapters - Models.dll
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture\InterfaceAdapter-Repository\bin\Debug\net9.0\InterfaceAdapters - Models.pdb
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-Alumnos\InterfaceAdapter-Repository\bin\Debug\net9.0\InterfaceAdapter-Repository.deps.json
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-Alumnos\InterfaceAdapter-Repository\bin\Debug\net9.0\InterfaceAdapter-Repository.dll
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-Alumnos\InterfaceAdapter-Repository\bin\Debug\net9.0\InterfaceAdapter-Repository.pdb
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-Alumnos\InterfaceAdapter-Repository\bin\Debug\net9.0\ApplicationLayer.dll
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-Alumnos\InterfaceAdapter-Repository\bin\Debug\net9.0\EnterpriseLayer-Entities.dll
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-Alumnos\InterfaceAdapter-Repository\bin\Debug\net9.0\InterfaceAdapters - Models.dll
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-Alumnos\InterfaceAdapter-Repository\bin\Debug\net9.0\InterfaceAdapters-Data.dll
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-Alumnos\InterfaceAdapter-Repository\bin\Debug\net9.0\ApplicationLayer.pdb
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-Alumnos\InterfaceAdapter-Repository\bin\Debug\net9.0\InterfaceAdapters - Models.pdb
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-Alumnos\InterfaceAdapter-Repository\bin\Debug\net9.0\InterfaceAdapters-Data.pdb
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-Alumnos\InterfaceAdapter-Repository\bin\Debug\net9.0\EnterpriseLayer-Entities.pdb
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-Alumnos\InterfaceAdapter-Repository\obj\Debug\net9.0\InterfaceAdapter-Repository.csproj.AssemblyReference.cache
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-Alumnos\InterfaceAdapter-Repository\obj\Debug\net9.0\InterfaceAdapter-Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-Alumnos\InterfaceAdapter-Repository\obj\Debug\net9.0\InterfaceAdapter-Repository.AssemblyInfoInputs.cache
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-Alumnos\InterfaceAdapter-Repository\obj\Debug\net9.0\InterfaceAdapter-Repository.AssemblyInfo.cs
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-Alumnos\InterfaceAdapter-Repository\obj\Debug\net9.0\InterfaceAdapter-Repository.csproj.CoreCompileInputs.cache
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-Alumnos\InterfaceAdapter-Repository\obj\Debug\net9.0\Interfac.9D7113D4.Up2Date
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-Alumnos\InterfaceAdapter-Repository\obj\Debug\net9.0\InterfaceAdapter-Repository.dll
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-Alumnos\InterfaceAdapter-Repository\obj\Debug\net9.0\refint\InterfaceAdapter-Repository.dll
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-Alumnos\InterfaceAdapter-Repository\obj\Debug\net9.0\InterfaceAdapter-Repository.pdb
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-Alumnos\InterfaceAdapter-Repository\obj\Debug\net9.0\ref\InterfaceAdapter-Repository.dll

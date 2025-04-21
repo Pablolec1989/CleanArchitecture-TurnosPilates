@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "EnterpriseLayer-Entities/1.0.0": {
+        "runtime": {
+          "EnterpriseLayer-Entities.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "EnterpriseLayer-Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,36 @@
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture\InterfaceAdapters-Data\bin\Debug\net9.0\InterfaceAdapters-Data.deps.json
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture\InterfaceAdapters-Data\bin\Debug\net9.0\InterfaceAdapters-Data.dll
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture\InterfaceAdapters-Data\bin\Debug\net9.0\InterfaceAdapters-Data.pdb
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture\InterfaceAdapters-Data\bin\Debug\net9.0\EnterpriseLayer-Entities.dll
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture\InterfaceAdapters-Data\bin\Debug\net9.0\EnterpriseLayer-Entities.pdb
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture\InterfaceAdapters-Data\obj\Debug\net9.0\InterfaceAdapters-Data.csproj.AssemblyReference.cache
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture\InterfaceAdapters-Data\obj\Debug\net9.0\InterfaceAdapters-Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture\InterfaceAdapters-Data\obj\Debug\net9.0\InterfaceAdapters-Data.AssemblyInfoInputs.cache
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture\InterfaceAdapters-Data\obj\Debug\net9.0\InterfaceAdapters-Data.AssemblyInfo.cs
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture\InterfaceAdapters-Data\obj\Debug\net9.0\InterfaceAdapters-Data.csproj.CoreCompileInputs.cache
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture\InterfaceAdapters-Data\obj\Debug\net9.0\Interfac.40C0DC05.Up2Date
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture\InterfaceAdapters-Data\obj\Debug\net9.0\InterfaceAdapters-Data.dll
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture\InterfaceAdapters-Data\obj\Debug\net9.0\refint\InterfaceAdapters-Data.dll
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture\InterfaceAdapters-Data\obj\Debug\net9.0\InterfaceAdapters-Data.pdb
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture\InterfaceAdapters-Data\obj\Debug\net9.0\ref\InterfaceAdapters-Data.dll
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture\InterfaceAdapters-Data\bin\Debug\net9.0\InterfaceAdapters - Models.dll
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture\InterfaceAdapters-Data\bin\Debug\net9.0\InterfaceAdapters - Models.pdb
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-Alumnos\InterfaceAdapters-Data\bin\Debug\net9.0\InterfaceAdapters-Data.deps.json
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-Alumnos\InterfaceAdapters-Data\bin\Debug\net9.0\InterfaceAdapters-Data.runtimeconfig.json
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-Alumnos\InterfaceAdapters-Data\bin\Debug\net9.0\InterfaceAdapters-Data.dll
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-Alumnos\InterfaceAdapters-Data\bin\Debug\net9.0\InterfaceAdapters-Data.pdb
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-Alumnos\InterfaceAdapters-Data\bin\Debug\net9.0\EnterpriseLayer-Entities.dll
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-Alumnos\InterfaceAdapters-Data\bin\Debug\net9.0\InterfaceAdapters - Models.dll
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-Alumnos\InterfaceAdapters-Data\bin\Debug\net9.0\EnterpriseLayer-Entities.pdb
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-Alumnos\InterfaceAdapters-Data\bin\Debug\net9.0\InterfaceAdapters - Models.pdb
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-Alumnos\InterfaceAdapters-Data\obj\Debug\net9.0\InterfaceAdapters-Data.csproj.AssemblyReference.cache
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-Alumnos\InterfaceAdapters-Data\obj\Debug\net9.0\InterfaceAdapters-Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-Alumnos\InterfaceAdapters-Data\obj\Debug\net9.0\InterfaceAdapters-Data.AssemblyInfoInputs.cache
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-Alumnos\InterfaceAdapters-Data\obj\Debug\net9.0\InterfaceAdapters-Data.AssemblyInfo.cs
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-Alumnos\InterfaceAdapters-Data\obj\Debug\net9.0\InterfaceAdapters-Data.csproj.CoreCompileInputs.cache
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-Alumnos\InterfaceAdapters-Data\obj\Debug\net9.0\Interfac.40C0DC05.Up2Date
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-Alumnos\InterfaceAdapters-Data\obj\Debug\net9.0\InterfaceAdapters-Data.dll
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-Alumnos\InterfaceAdapters-Data\obj\Debug\net9.0\refint\InterfaceAdapters-Data.dll
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-Alumnos\InterfaceAdapters-Data\obj\Debug\net9.0\InterfaceAdapters-Data.pdb
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-Alumnos\InterfaceAdapters-Data\obj\Debug\net9.0\InterfaceAdapters-Data.genruntimeconfig.cache
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-Alumnos\InterfaceAdapters-Data\obj\Debug\net9.0\ref\InterfaceAdapters-Data.dll
