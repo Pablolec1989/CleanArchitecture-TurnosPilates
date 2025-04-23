@@ -20,3 +20,19 @@ C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-Alumnos\Inter
 C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-Alumnos\InterfaceAdapters - Models\obj\Debug\net9.0\refint\InterfaceAdapters - Models.dll
 C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-Alumnos\InterfaceAdapters - Models\obj\Debug\net9.0\InterfaceAdapters - Models.pdb
 C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-Alumnos\InterfaceAdapters - Models\obj\Debug\net9.0\ref\InterfaceAdapters - Models.dll
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\InterfaceAdapters - Models\bin\Debug\net9.0\InterfaceAdapters - Models.deps.json
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\InterfaceAdapters - Models\bin\Debug\net9.0\InterfaceAdapters - Models.dll
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\InterfaceAdapters - Models\bin\Debug\net9.0\InterfaceAdapters - Models.pdb
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\InterfaceAdapters - Models\obj\Debug\net9.0\InterfaceAdapters - Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\InterfaceAdapters - Models\obj\Debug\net9.0\InterfaceAdapters - Models.AssemblyInfoInputs.cache
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\InterfaceAdapters - Models\obj\Debug\net9.0\InterfaceAdapters - Models.AssemblyInfo.cs
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\InterfaceAdapters - Models\obj\Debug\net9.0\InterfaceAdapters - Models.csproj.CoreCompileInputs.cache
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\InterfaceAdapters - Models\obj\Debug\net9.0\InterfaceAdapters - Models.sourcelink.json
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\InterfaceAdapters - Models\obj\Debug\net9.0\InterfaceAdapters - Models.dll
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\InterfaceAdapters - Models\obj\Debug\net9.0\refint\InterfaceAdapters - Models.dll
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\InterfaceAdapters - Models\obj\Debug\net9.0\InterfaceAdapters - Models.pdb
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\InterfaceAdapters - Models\obj\Debug\net9.0\ref\InterfaceAdapters - Models.dll
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\InterfaceAdapters - Models\bin\Debug\net9.0\EnterpriseLayer-Entities.dll
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\InterfaceAdapters - Models\bin\Debug\net9.0\EnterpriseLayer-Entities.pdb
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\InterfaceAdapters - Models\obj\Debug\net9.0\InterfaceAdapters - Models.csproj.AssemblyReference.cache
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\InterfaceAdapters - Models\obj\Debug\net9.0\Interfac.784AD17B.Up2Date

@@ -31,15 +31,18 @@ namespace InterfaceAdapters_Data.Migrations
 
                     b.Property<string>("Apellido")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<string>("Nombre")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<string>("NroTelefono")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
 
                     b.Property<string>("Observaciones")
                         .HasColumnType("nvarchar(max)");
@@ -47,6 +50,29 @@ namespace InterfaceAdapters_Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Alumno", (string)null);
+                });
+
+            modelBuilder.Entity("InterfaceAdapters___Models.HorarioModel", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Dia")
+                        .IsRequired()
+                        .HasMaxLength(15)
+                        .HasColumnType("nvarchar(15)");
+
+                    b.Property<string>("Hora")
+                        .IsRequired()
+                        .HasMaxLength(10)
+                        .HasColumnType("nvarchar(10)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Horario", (string)null);
                 });
 
             modelBuilder.Entity("InterfaceAdapters___Models.InstructorModel", b =>
@@ -59,15 +85,18 @@ namespace InterfaceAdapters_Data.Migrations
 
                     b.Property<string>("Apellido")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<string>("Nombre")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<string>("NroTelefono")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
 
                     b.Property<int>("PorcentajeDePago")
                         .HasColumnType("int");
@@ -75,6 +104,106 @@ namespace InterfaceAdapters_Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Instructor", (string)null);
+                });
+
+            modelBuilder.Entity("InterfaceAdapters___Models.TurnoAlumnoModel", b =>
+                {
+                    b.Property<int>("AlumnoId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TurnoId")
+                        .HasColumnType("int");
+
+                    b.HasKey("AlumnoId", "TurnoId");
+
+                    b.HasIndex("TurnoId");
+
+                    b.ToTable("TurnoAlumno", (string)null);
+                });
+
+            modelBuilder.Entity("InterfaceAdapters___Models.TurnoModel", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("CapacidadMaxima")
+                        .HasColumnType("int");
+
+                    b.Property<int>("HorarioId")
+                        .HasColumnType("int")
+                        .HasColumnName("HorarioId");
+
+                    b.Property<int?>("InstructorId")
+                        .HasColumnType("int")
+                        .HasColumnName("InstructorId");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("HorarioId");
+
+                    b.HasIndex("InstructorId");
+
+                    b.ToTable("Turno", (string)null);
+                });
+
+            modelBuilder.Entity("InterfaceAdapters___Models.TurnoAlumnoModel", b =>
+                {
+                    b.HasOne("InterfaceAdapters___Models.AlumnoModel", "Alumno")
+                        .WithMany("TurnoAlumnos")
+                        .HasForeignKey("AlumnoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("InterfaceAdapters___Models.TurnoModel", "Turno")
+                        .WithMany("TurnoAlumnos")
+                        .HasForeignKey("TurnoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Alumno");
+
+                    b.Navigation("Turno");
+                });
+
+            modelBuilder.Entity("InterfaceAdapters___Models.TurnoModel", b =>
+                {
+                    b.HasOne("InterfaceAdapters___Models.HorarioModel", "Horario")
+                        .WithMany("Turnos")
+                        .HasForeignKey("HorarioId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("InterfaceAdapters___Models.InstructorModel", "Instructor")
+                        .WithMany("Turnos")
+                        .HasForeignKey("InstructorId")
+                        .OnDelete(DeleteBehavior.SetNull);
+
+                    b.Navigation("Horario");
+
+                    b.Navigation("Instructor");
+                });
+
+            modelBuilder.Entity("InterfaceAdapters___Models.AlumnoModel", b =>
+                {
+                    b.Navigation("TurnoAlumnos");
+                });
+
+            modelBuilder.Entity("InterfaceAdapters___Models.HorarioModel", b =>
+                {
+                    b.Navigation("Turnos");
+                });
+
+            modelBuilder.Entity("InterfaceAdapters___Models.InstructorModel", b =>
+                {
+                    b.Navigation("Turnos");
+                });
+
+            modelBuilder.Entity("InterfaceAdapters___Models.TurnoModel", b =>
+                {
+                    b.Navigation("TurnoAlumnos");
                 });
 #pragma warning restore 612, 618
         }

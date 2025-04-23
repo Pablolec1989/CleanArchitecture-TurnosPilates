@@ -13,5 +13,6 @@ namespace EnterpriseLayer_Entities
         public required string Apellido { get; set; }
         public required string NroTelefono { get; set; }
         public required int PorcentajeDePago { get; set; }
+        public List<Turno>? Turnos { get; set; }
     }
 }

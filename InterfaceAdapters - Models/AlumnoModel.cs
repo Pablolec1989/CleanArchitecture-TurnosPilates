@@ -1,4 +1,6 @@
-﻿namespace InterfaceAdapters___Models
+﻿using EnterpriseLayer_Entities;
+
+namespace InterfaceAdapters___Models
 {
     public class AlumnoModel
     {
@@ -7,5 +9,7 @@
         public required string Apellido { get; set; }
         public string? Observaciones { get; set; }
         public required string NroTelefono { get; set; }
+        public List<TurnoAlumnoModel>? TurnoAlumnos { get; set; } = [];
+
     }
 }

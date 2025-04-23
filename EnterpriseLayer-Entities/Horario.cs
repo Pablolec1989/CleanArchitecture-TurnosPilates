@@ -11,5 +11,6 @@ namespace EnterpriseLayer_Entities
         public int Id { get; set; }
         public required string Dia { get; set; }
         public required string Hora { get; set; }
+        public List<Turno>? Turnos { get; set; }
     }
 }

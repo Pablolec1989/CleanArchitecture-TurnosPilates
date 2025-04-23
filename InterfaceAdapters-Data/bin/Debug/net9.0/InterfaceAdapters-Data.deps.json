@@ -1077,6 +1077,9 @@
         }
       },
       "InterfaceAdapters - Models/1.0.0": {
+        "dependencies": {
+          "EnterpriseLayer-Entities": "1.0.0"
+        },
         "runtime": {
           "InterfaceAdapters - Models.dll": {
             "assemblyVersion": "1.0.0.0",

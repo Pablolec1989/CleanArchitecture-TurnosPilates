@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\LECCESE\\source\\repos\\Clean Architecture\\CleanArchitecture-Alumnos\\EnterpriseLayer-Entities\\EnterpriseLayer-Entities.csproj": {}
+    "C:\\Users\\LECCESE\\source\\repos\\Clean Architecture\\CleanArchitecture-TurnosPilates\\EnterpriseLayer-Entities\\EnterpriseLayer-Entities.csproj": {}
   },
   "projects": {
-    "C:\\Users\\LECCESE\\source\\repos\\Clean Architecture\\CleanArchitecture-Alumnos\\EnterpriseLayer-Entities\\EnterpriseLayer-Entities.csproj": {
+    "C:\\Users\\LECCESE\\source\\repos\\Clean Architecture\\CleanArchitecture-TurnosPilates\\EnterpriseLayer-Entities\\EnterpriseLayer-Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\LECCESE\\source\\repos\\Clean Architecture\\CleanArchitecture-Alumnos\\EnterpriseLayer-Entities\\EnterpriseLayer-Entities.csproj",
+        "projectUniqueName": "C:\\Users\\LECCESE\\source\\repos\\Clean Architecture\\CleanArchitecture-TurnosPilates\\EnterpriseLayer-Entities\\EnterpriseLayer-Entities.csproj",
         "projectName": "EnterpriseLayer-Entities",
-        "projectPath": "C:\\Users\\LECCESE\\source\\repos\\Clean Architecture\\CleanArchitecture-Alumnos\\EnterpriseLayer-Entities\\EnterpriseLayer-Entities.csproj",
+        "projectPath": "C:\\Users\\LECCESE\\source\\repos\\Clean Architecture\\CleanArchitecture-TurnosPilates\\EnterpriseLayer-Entities\\EnterpriseLayer-Entities.csproj",
         "packagesPath": "C:\\Users\\LECCESE\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\LECCESE\\source\\repos\\Clean Architecture\\CleanArchitecture-Alumnos\\EnterpriseLayer-Entities\\obj\\",
+        "outputPath": "C:\\Users\\LECCESE\\source\\repos\\Clean Architecture\\CleanArchitecture-TurnosPilates\\EnterpriseLayer-Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
