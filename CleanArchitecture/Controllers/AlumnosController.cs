@@ -15,14 +15,14 @@ namespace CleanArchitecture.Controllers
     [Route("api/alumnos")]
     public class AlumnosController : ControllerBase
     {
-        private readonly GetByIdAlumnoService _getByIdAlumnoService;
+        private readonly GetByIdAlumnoService<Alumno, AlumnoEnTurnoViewModel> _getByIdAlumnoService;
         private readonly GetAlumnoService<Alumno, AlumnoViewModel> _getAlumnoService;
         private readonly AddAlumnoService<AlumnoRequestDTO> _addAlumnoService;
         private readonly UpdateAlumnoService<AlumnoRequestDTO> _updateAlumnoService;
         private readonly DeleteAlumnoService _deleteAlumnoService;
         private readonly IValidator<AlumnoRequestDTO> _validator;
 
-        public AlumnosController(GetByIdAlumnoService getByIdAlumnoService,
+        public AlumnosController(GetByIdAlumnoService<Alumno, AlumnoEnTurnoViewModel> getByIdAlumnoService,
                                 GetAlumnoService<Alumno, AlumnoViewModel> getAlumnoService,
                                 AddAlumnoService<AlumnoRequestDTO> addAlumnoService,
                                 UpdateAlumnoService<AlumnoRequestDTO> updateAlumnoService,
@@ -38,13 +38,20 @@ namespace CleanArchitecture.Controllers
         }
 
         [HttpGet("{id:int}")]
-        public async Task<Alumno> Get(int id)
+        public async Task<ActionResult<Alumno>> Get(int id)
         {
-            return await _getByIdAlumnoService.ExecuteAsync(id);
+            var alumno = await _getByIdAlumnoService.ExecuteAsync(id);
+
+            if (alumno is null)
+            {
+                throw new ValidationException("Alumno no encontrado");
+            }
+
+            return Ok(alumno);
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<AlumnoViewModel>>> Get()
+        public async Task<ActionResult<IEnumerable<Alumno>>> Get()
         {
             var alumnos = await _getAlumnoService.ExecuteAsync();
             return Ok(alumnos);

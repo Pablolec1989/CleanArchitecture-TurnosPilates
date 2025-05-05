@@ -62,3 +62,5 @@ C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates
 C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\InterfaceAdapter-Repository\obj\Debug\net9.0\refint\InterfaceAdapter-Repository.dll
 C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\InterfaceAdapter-Repository\obj\Debug\net9.0\InterfaceAdapter-Repository.pdb
 C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\InterfaceAdapter-Repository\obj\Debug\net9.0\ref\InterfaceAdapter-Repository.dll
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\InterfaceAdapter-Repository\bin\Debug\net9.0\InterfaceAdapters-Presenters.dll
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\InterfaceAdapter-Repository\bin\Debug\net9.0\InterfaceAdapters-Presenters.pdb

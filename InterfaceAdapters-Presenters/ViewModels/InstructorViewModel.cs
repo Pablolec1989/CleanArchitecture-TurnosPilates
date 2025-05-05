@@ -10,7 +10,5 @@ namespace InterfaceAdapters_Presenters.ViewModels
     {
         public int Id { get; set; }
         public string NombreCompleto { get; set; }
-        public string NroTelefono { get; set; }
-        public string PorcentajeDePago { get; set; }
     }
 }

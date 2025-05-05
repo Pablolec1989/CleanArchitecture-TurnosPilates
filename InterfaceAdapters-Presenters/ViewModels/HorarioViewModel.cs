@@ -8,6 +8,7 @@ namespace InterfaceAdapters_Presenters.ViewModels
 {
     public class HorarioViewModel
     {
+        public int Id { get; set; }
         public string Horario { get; set; }
     }
 }

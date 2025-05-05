@@ -14,10 +14,7 @@ namespace InterfaceAdapters___Models
         public int TurnoId { get; set; }
 
         // Propiedades de navegación
-        [ForeignKey("AlumnoId")]
         public AlumnoModel? Alumno { get; set; }
-
-        [ForeignKey("TurnoId")]
         public TurnoModel? Turno { get; set; }
     }
 }

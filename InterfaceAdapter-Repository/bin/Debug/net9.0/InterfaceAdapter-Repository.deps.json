@@ -9,7 +9,8 @@
       "InterfaceAdapter-Repository/1.0.0": {
         "dependencies": {
           "ApplicationLayer": "1.0.0",
-          "InterfaceAdapters-Data": "1.0.0"
+          "InterfaceAdapters-Data": "1.0.0",
+          "InterfaceAdapters-Presenters": "1.0.0"
         },
         "runtime": {
           "InterfaceAdapter-Repository.dll": {}
@@ -689,6 +690,18 @@
             "fileVersion": "1.0.0.0"
           }
         }
+      },
+      "InterfaceAdapters-Presenters/1.0.0": {
+        "dependencies": {
+          "ApplicationLayer": "1.0.0",
+          "EnterpriseLayer-Entities": "1.0.0"
+        },
+        "runtime": {
+          "InterfaceAdapters-Presenters.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -1134,6 +1147,11 @@
       "sha512": ""
     },
     "InterfaceAdapters-Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "InterfaceAdapters-Presenters/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

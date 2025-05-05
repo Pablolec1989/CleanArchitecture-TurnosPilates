@@ -2,6 +2,7 @@ using ApplicationLayer;
 using ApplicationLayer.AlumnoService;
 using ApplicationLayer.HorarioService;
 using ApplicationLayer.InstructorService;
+using ApplicationLayer.TurnoService;
 using CleanArchitecture.Middlewares;
 using CleanArchitecture.Validators;
 using EnterpriseLayer_Entities;
@@ -30,6 +31,8 @@ builder.Services.AddControllers();
 //Validadores
 builder.Services.AddValidatorsFromAssemblyContaining<AlumnoValidator>();
 builder.Services.AddValidatorsFromAssemblyContaining<InstructorValidator>();
+builder.Services.AddValidatorsFromAssemblyContaining<HorarioValidator>();
+builder.Services.AddValidatorsFromAssemblyContaining<TurnoValidator>();
 builder.Services.AddFluentValidationAutoValidation();
 builder.Services.AddFluentValidationClientsideAdapters();
 
@@ -41,14 +44,16 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 });
 
 //Alumnos
-builder.Services.AddScoped<GetByIdAlumnoService>();
+builder.Services.AddScoped<GetByIdAlumnoService<Alumno, AlumnoEnTurnoViewModel>>();
 builder.Services.AddScoped<GetAlumnoService<Alumno, AlumnoViewModel>>();
 builder.Services.AddScoped<AddAlumnoService<AlumnoRequestDTO>>();
 builder.Services.AddScoped<UpdateAlumnoService<AlumnoRequestDTO>>();
 builder.Services.AddScoped<DeleteAlumnoService>();
 builder.Services.AddScoped<IRepository<Alumno>, RepositoryAlumno>();
 builder.Services.AddScoped<IPresenter<Alumno, AlumnoViewModel>, AlumnoPresenter>();
-builder.Services.AddScoped<IMapper<AlumnoRequestDTO, Alumno>, AlumnoMapper>();
+builder.Services.AddScoped<IPresenterById<Alumno, AlumnoEnTurnoViewModel>, AlumnoEnTurnoPresenter>();
+
+builder.Services.AddScoped<IMapper<AlumnoRequestDTO, Alumno>, AlumnoRequestMapper>();
 
 //Instructores
 builder.Services.AddScoped<GetByIdInstructorService>();
@@ -69,6 +74,16 @@ builder.Services.AddScoped<DeleteHorarioService>();
 builder.Services.AddScoped<IRepository<Horario>, RepositoryHorario>();
 builder.Services.AddScoped<IPresenter<Horario, HorarioViewModel>, HorarioPresenter>();
 builder.Services.AddScoped<IMapper<HorarioRequestDTO, Horario>, HorarioMapper>();
+
+//Turnos
+builder.Services.AddScoped<GetByIdTurnoService>();
+builder.Services.AddScoped<GetTurnoService<Turno, TurnoViewModel>>();
+builder.Services.AddScoped<AddTurnoService<TurnoRequestDTO>>();
+builder.Services.AddScoped<UpdateTurnoService<TurnoRequestDTO>>();
+builder.Services.AddScoped<DeleteTurnoService>();
+builder.Services.AddScoped<IRepository<Turno>, RepositoryTurno>();
+builder.Services.AddScoped<IPresenter<Turno, TurnoViewModel>, TurnoPresenter>();
+builder.Services.AddScoped<IMapper<TurnoRequestDTO, Turno>, TurnoMapper>();
 
 var app = builder.Build();
 

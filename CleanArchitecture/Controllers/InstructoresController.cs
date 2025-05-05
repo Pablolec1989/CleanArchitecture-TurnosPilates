@@ -1,6 +1,4 @@
-﻿
-
-using ApplicationLayer;
+﻿using ApplicationLayer;
 using ApplicationLayer.InstructorService;
 using EnterpriseLayer_Entities;
 using FluentValidation;

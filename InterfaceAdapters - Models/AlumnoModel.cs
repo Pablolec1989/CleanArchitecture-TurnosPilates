@@ -9,7 +9,7 @@ namespace InterfaceAdapters___Models
         public required string Apellido { get; set; }
         public string? Observaciones { get; set; }
         public required string NroTelefono { get; set; }
-        public List<TurnoAlumnoModel>? TurnoAlumnos { get; set; } = [];
+        public List<TurnoAlumnoModel>? Turnos { get; set; }
 
     }
 }

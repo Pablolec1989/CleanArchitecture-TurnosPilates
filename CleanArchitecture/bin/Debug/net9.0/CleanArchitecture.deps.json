@@ -1192,7 +1192,8 @@
         "dependencies": {
           "ApplicationLayer": "1.0.0",
           "InterfaceAdapters - Models": "1.0.0",
-          "InterfaceAdapters-Data": "1.0.0"
+          "InterfaceAdapters-Data": "1.0.0",
+          "InterfaceAdapters-Presenters": "1.0.0"
         },
         "runtime": {
           "InterfaceAdapter-Repository.dll": {

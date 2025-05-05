@@ -12,6 +12,6 @@ namespace InterfaceAdapters___Models
         public int Id { get; set; }
         public required string Dia { get; set; }
         public required string Hora { get; set; }
-        public List<TurnoModel> Turnos { get; set; } = new List<TurnoModel>();
+        public List<TurnoModel>? Turnos { get; set; } = [];
     }
 }

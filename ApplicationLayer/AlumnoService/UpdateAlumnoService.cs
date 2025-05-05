@@ -22,13 +22,6 @@ namespace ApplicationLayer.AlumnoService
 
         public async Task ExecuteAsync(int id, TDTO alumnoRequestDTO)
         {
-            var alumnoExistente = await _alumnoRepository.GetByIdAsync(id); //--busco el dato en el repo.
-
-            if (alumnoExistente is null)
-            {
-                throw new ValidationException($"No se encontró ningún alumno con el ID: {id} para actualizar.");
-            }
-
             var alumnoAActualizar = _mapper.ToEntity(alumnoRequestDTO);
             alumnoAActualizar.Id = id;
 

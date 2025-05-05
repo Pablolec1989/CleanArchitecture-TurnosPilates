@@ -4,19 +4,16 @@ namespace ApplicationLayer.AlumnoService
 {
     public class GetAlumnoService<TEntity, TOutput>
     {
-        private readonly IRepository<TEntity> _alumnoRepository;
-        private readonly IPresenter<TEntity, TOutput> _presenter;
+        private readonly IRepository<Alumno> _alumnoRepository;
 
-        public GetAlumnoService(IRepository<TEntity> alumnoRepository, IPresenter<TEntity, TOutput> presenter )
+        public GetAlumnoService(IRepository<Alumno> alumnoRepository)
         {
             _alumnoRepository = alumnoRepository;
-            _presenter = presenter;
         }
 
-        public async Task<IEnumerable<TOutput>> ExecuteAsync()
+        public async Task<IEnumerable<Alumno>> ExecuteAsync()
         {
-            var alumnos = await _alumnoRepository.GetAllAsync();
-            return _presenter.Present(alumnos);
+            return await _alumnoRepository.GetAllAsync();
         }
 
     }

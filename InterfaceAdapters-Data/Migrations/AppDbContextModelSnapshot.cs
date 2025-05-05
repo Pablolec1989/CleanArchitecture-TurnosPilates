@@ -129,7 +129,7 @@ namespace InterfaceAdapters_Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("CapacidadMaxima")
+                    b.Property<int>("Capacidad")
                         .HasColumnType("int");
 
                     b.Property<int>("HorarioId")

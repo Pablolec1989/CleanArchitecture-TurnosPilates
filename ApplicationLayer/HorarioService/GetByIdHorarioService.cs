@@ -23,7 +23,7 @@ namespace ApplicationLayer.HorarioService
 
             if(horario is null)
             {
-                throw new ValidationException($"No se encontró el horario con el ID: {id}.");
+                throw new ValidationException("No se encontró el horario");
             }
 
             return horario;

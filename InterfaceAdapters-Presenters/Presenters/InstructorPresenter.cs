@@ -17,8 +17,6 @@ namespace InterfaceAdapters_Presenters.Presenters
             {
                 Id = i.Id,
                 NombreCompleto = $"{i.Nombre} {i.Apellido}",
-                NroTelefono = i.NroTelefono,
-                PorcentajeDePago = $"{i.PorcentajeDePago} %"
             });
         }
     }

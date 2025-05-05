@@ -1123,6 +1123,20 @@
         "runtime": {
           "bin/placeholder/InterfaceAdapters-Data.dll": {}
         }
+      },
+      "InterfaceAdapters-Presenters/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "ApplicationLayer": "1.0.0",
+          "EnterpriseLayer-Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/InterfaceAdapters-Presenters.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/InterfaceAdapters-Presenters.dll": {}
+        }
       }
     }
   },
@@ -2984,13 +2998,19 @@
       "type": "project",
       "path": "../InterfaceAdapters-Data/InterfaceAdapters-Data.csproj",
       "msbuildProject": "../InterfaceAdapters-Data/InterfaceAdapters-Data.csproj"
+    },
+    "InterfaceAdapters-Presenters/1.0.0": {
+      "type": "project",
+      "path": "../InterfaceAdapters-Presenters/InterfaceAdapters-Presenters.csproj",
+      "msbuildProject": "../InterfaceAdapters-Presenters/InterfaceAdapters-Presenters.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
       "ApplicationLayer >= 1.0.0",
       "InterfaceAdapters - Models >= 1.0.0",
-      "InterfaceAdapters-Data >= 1.0.0"
+      "InterfaceAdapters-Data >= 1.0.0",
+      "InterfaceAdapters-Presenters >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -3033,6 +3053,9 @@
             },
             "C:\\Users\\LECCESE\\source\\repos\\Clean Architecture\\CleanArchitecture-TurnosPilates\\InterfaceAdapters-Data\\InterfaceAdapters-Data.csproj": {
               "projectPath": "C:\\Users\\LECCESE\\source\\repos\\Clean Architecture\\CleanArchitecture-TurnosPilates\\InterfaceAdapters-Data\\InterfaceAdapters-Data.csproj"
+            },
+            "C:\\Users\\LECCESE\\source\\repos\\Clean Architecture\\CleanArchitecture-TurnosPilates\\InterfaceAdapters-Presenters\\InterfaceAdapters-Presenters.csproj": {
+              "projectPath": "C:\\Users\\LECCESE\\source\\repos\\Clean Architecture\\CleanArchitecture-TurnosPilates\\InterfaceAdapters-Presenters\\InterfaceAdapters-Presenters.csproj"
             }
           }
         }

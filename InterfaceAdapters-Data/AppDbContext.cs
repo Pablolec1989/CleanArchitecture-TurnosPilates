@@ -78,7 +78,7 @@ namespace InterfaceAdapters_Data
             {
                 entity.ToTable("Turno");
 
-                entity.Property(t => t.CapacidadMaxima)
+                entity.Property(t => t.Capacidad)
                     .IsRequired();
 
                 // Relación con Instructor
@@ -104,13 +104,13 @@ namespace InterfaceAdapters_Data
 
                 // Relación con Alumno
                 entity.HasOne(ta => ta.Alumno)
-                    .WithMany(a => a.TurnoAlumnos)
+                    .WithMany(a => a.Turnos)
                     .HasForeignKey(ta => ta.AlumnoId)
                     .OnDelete(DeleteBehavior.Cascade);
 
                 // Relación con Turno
                 entity.HasOne(ta => ta.Turno)
-                    .WithMany(t => t.TurnoAlumnos)
+                    .WithMany(t => t.Alumnos)
                     .HasForeignKey(ta => ta.TurnoId)
                     .OnDelete(DeleteBehavior.Cascade);
             });

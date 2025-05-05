@@ -19,37 +19,6 @@ namespace InterfaceAdapter_Repository
             _dbContext = dbContext;
         }
 
-        public async Task AddAsync(Horario horario)
-        {
-            var horarioModel = new HorarioModel()
-            {
-                Dia = horario.Dia,
-                Hora = horario.Hora,
-            };
-
-            await _dbContext.AddAsync(horarioModel);
-            await _dbContext.SaveChangesAsync();
-        }
-
-        public async Task DeleteAsync(int id)
-        {
-            var horarioExiste = await _dbContext.Horarios
-                .Where(h => h.Id == id).ExecuteDeleteAsync();
-
-            await _dbContext.SaveChangesAsync();
-        }
-
-        public async Task<IEnumerable<Horario>> GetAllAsync()
-        {
-            return await _dbContext.Horarios
-                .Select(h => new Horario 
-                {
-                    Dia = h.Dia,
-                    Hora = h.Hora,
-                })
-                .ToListAsync();
-        }
-
         public async Task<Horario> GetByIdAsync(int id)
         {
             var horarioModel = await _dbContext.Horarios.FindAsync(id);
@@ -64,18 +33,48 @@ namespace InterfaceAdapter_Repository
                 Dia = horarioModel.Dia,
                 Hora = horarioModel.Hora,
             };
-
         }
+        public async Task<IEnumerable<Horario>> GetAllAsync()
+        {
+            return await _dbContext.Horarios
+                .Select(h => new Horario
+                {
+                    Id = h.Id,
+                    Dia = h.Dia,
+                    Hora = h.Hora,
+                })
+                .ToListAsync();
+        }
+        public async Task AddAsync(Horario horario)
+        {
+            var horarioModel = new HorarioModel()
+            {
+                Dia = horario.Dia,
+                Hora = horario.Hora,
+            };
 
+            await _dbContext.AddAsync(horarioModel);
+            await _dbContext.SaveChangesAsync();
+        }
         public async Task UpdateAsync(int id, Horario horario)
         {
             var horarioModel = await _dbContext.Horarios.FindAsync(id);
 
             if(horarioModel != null)
             {
+                horarioModel.Id = horario.Id;
                 horarioModel.Dia = horario.Dia;
                 horarioModel.Hora = horario.Hora;
             }
+
+            await _dbContext.SaveChangesAsync();
+        }
+        public async Task DeleteAsync(int id)
+        {
+            var horarioExiste = await _dbContext.Horarios
+                .Where(h => h.Id == id).ExecuteDeleteAsync();
+
+            await _dbContext.SaveChangesAsync();
         }
     }
 }

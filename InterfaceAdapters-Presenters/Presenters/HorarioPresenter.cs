@@ -15,6 +15,7 @@ namespace InterfaceAdapters_Presenters.Presenters
         {
             return horarios.Select(h => new HorarioViewModel
             {
+                Id = h.Id,
                 Horario = $"{h.Dia} {h.Hora}"
             });
         }

@@ -6,7 +6,7 @@ using InterfaceAdapter___Mappers.DTOs.Requests;
 using InterfaceAdapters_Presenters.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel.DataAnnotations;
-using ValidationException = FluentValidation.ValidationException;
+using ValidationException = System.ComponentModel.DataAnnotations.ValidationException;
 using ValidationResult = FluentValidation.Results.ValidationResult;
 
 namespace CleanArchitecture.Controllers

@@ -8,25 +8,28 @@ using System.Threading.Tasks;
 
 namespace ApplicationLayer.AlumnoService
 {
-    public class GetByIdAlumnoService
+    public class GetByIdAlumnoService<Alumno, AlumnoEnTurnoViewModel>
     {
         private readonly IRepository<Alumno> _alumnoRepository;
+        private readonly IPresenterById<Alumno, AlumnoEnTurnoViewModel> _presenter;
 
-        public GetByIdAlumnoService(IRepository<Alumno> alumnoRepository)
+        public GetByIdAlumnoService(IRepository<Alumno> alumnoRepository, IPresenterById<Alumno, AlumnoEnTurnoViewModel> presenter)
         {
             _alumnoRepository = alumnoRepository;
+            _presenter = presenter;
         }
 
-        public async Task<Alumno> ExecuteAsync(int id)
+        public async Task<AlumnoEnTurnoViewModel> ExecuteAsync(int id)
         {
             var alumno = await _alumnoRepository.GetByIdAsync(id);
 
-            if(alumno is null)
+            if (alumno is null)
             {
-                throw new ValidationException($"No se encontró el alumno con el ID: {id}.");
+                throw new ValidationException("No se encontró el alumno");
             }
 
-            return alumno;
+            return _presenter.Present(alumno);
+
         }
     }
 }

@@ -70,10 +70,6 @@
                 ],
                 "type": "object",
                 "properties": {
-                  "Id": {
-                    "type": "integer",
-                    "format": "int32"
-                  },
                   "Nombre": {
                     "type": "string"
                   },
@@ -89,9 +85,6 @@
                 }
               },
               "encoding": {
-                "Id": {
-                  "style": "form"
-                },
                 "Nombre": {
                   "style": "form"
                 },
@@ -149,7 +142,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/AlumnoViewModel"
+                    "$ref": "#/components/schemas/Alumno"
                   }
                 }
               },
@@ -157,7 +150,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/AlumnoViewModel"
+                    "$ref": "#/components/schemas/Alumno"
                   }
                 }
               },
@@ -165,7 +158,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/AlumnoViewModel"
+                    "$ref": "#/components/schemas/Alumno"
                   }
                 }
               }
@@ -188,10 +181,6 @@
                 ],
                 "type": "object",
                 "properties": {
-                  "Id": {
-                    "type": "integer",
-                    "format": "int32"
-                  },
                   "Nombre": {
                     "type": "string"
                   },
@@ -207,9 +196,6 @@
                 }
               },
               "encoding": {
-                "Id": {
-                  "style": "form"
-                },
                 "Nombre": {
                   "style": "form"
                 },
@@ -649,6 +635,224 @@
           }
         }
       }
+    },
+    "/api/turnos/{id}": {
+      "get": {
+        "tags": [
+          "Turnos"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Turno"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Turno"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Turno"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Turnos"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "HorarioId": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "InstructorId": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "Alumnos": {
+                    "type": "array",
+                    "items": {
+                      "type": "integer",
+                      "format": "int32"
+                    }
+                  },
+                  "Capacidad": {
+                    "type": "integer",
+                    "format": "int32"
+                  }
+                }
+              },
+              "encoding": {
+                "HorarioId": {
+                  "style": "form"
+                },
+                "InstructorId": {
+                  "style": "form"
+                },
+                "Alumnos": {
+                  "style": "form"
+                },
+                "Capacidad": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Turnos"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/turnos": {
+      "get": {
+        "tags": [
+          "Turnos"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TurnoViewModel"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TurnoViewModel"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TurnoViewModel"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Turnos"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "HorarioId": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "InstructorId": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "Alumnos": {
+                    "type": "array",
+                    "items": {
+                      "type": "integer",
+                      "format": "int32"
+                    }
+                  },
+                  "Capacidad": {
+                    "type": "integer",
+                    "format": "int32"
+                  }
+                }
+              },
+              "encoding": {
+                "HorarioId": {
+                  "style": "form"
+                },
+                "InstructorId": {
+                  "style": "form"
+                },
+                "Alumnos": {
+                  "style": "form"
+                },
+                "Capacidad": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {
@@ -680,6 +884,13 @@
           "nroTelefono": {
             "type": "string",
             "nullable": true
+          },
+          "turnos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TurnosAlumnos"
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -695,12 +906,11 @@
             "type": "string",
             "nullable": true
           },
-          "observaciones": {
-            "type": "string",
-            "nullable": true
-          },
-          "nroTelefono": {
-            "type": "string",
+          "turnos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TurnosAlumnos"
+            },
             "nullable": true
           }
         },
@@ -723,6 +933,13 @@
           },
           "hora": {
             "type": "string",
+            "nullable": true
+          },
+          "turnos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Turno"
+            },
             "nullable": true
           }
         },
@@ -753,6 +970,10 @@
       "HorarioViewModel": {
         "type": "object",
         "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
           "horario": {
             "type": "string",
             "nullable": true
@@ -788,6 +1009,13 @@
           "porcentajeDePago": {
             "type": "integer",
             "format": "int32"
+          },
+          "turnos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Turno"
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -802,14 +1030,97 @@
           "nombreCompleto": {
             "type": "string",
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Turno": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
           },
-          "nroTelefono": {
-            "type": "string",
+          "horarioId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "instructorId": {
+            "type": "integer",
+            "format": "int32",
             "nullable": true
           },
-          "porcentajeDePago": {
-            "type": "string",
+          "capacidadMaxima": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "disponibilidad": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "alumnos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TurnosAlumnos"
+            },
             "nullable": true
+          },
+          "horario": {
+            "$ref": "#/components/schemas/Horario"
+          },
+          "instructor": {
+            "$ref": "#/components/schemas/Instructor"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TurnoViewModel": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "horario": {
+            "$ref": "#/components/schemas/HorarioViewModel"
+          },
+          "instructor": {
+            "$ref": "#/components/schemas/InstructorViewModel"
+          },
+          "alumnos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/AlumnoViewModel"
+            },
+            "nullable": true
+          },
+          "capacidadMaxima": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "disponibilidad": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TurnosAlumnos": {
+        "type": "object",
+        "properties": {
+          "alumnoId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "turnoId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "alumno": {
+            "$ref": "#/components/schemas/Alumno"
+          },
+          "turno": {
+            "$ref": "#/components/schemas/Turno"
           }
         },
         "additionalProperties": false
