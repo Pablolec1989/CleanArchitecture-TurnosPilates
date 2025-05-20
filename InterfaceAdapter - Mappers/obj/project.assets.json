@@ -6,7 +6,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
-          "EnterpriseLayer-Entities": "1.0.0"
+          "EnterpriseLayer-Entities": "1.0.0",
+          "InterfaceAdapters - Models": "1.0.0"
         },
         "compile": {
           "bin/placeholder/ApplicationLayer.dll": {}
@@ -24,6 +25,19 @@
         "runtime": {
           "bin/placeholder/EnterpriseLayer-Entities.dll": {}
         }
+      },
+      "InterfaceAdapters - Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "EnterpriseLayer-Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/InterfaceAdapters - Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/InterfaceAdapters - Models.dll": {}
+        }
       }
     }
   },
@@ -37,6 +51,11 @@
       "type": "project",
       "path": "../EnterpriseLayer-Entities/EnterpriseLayer-Entities.csproj",
       "msbuildProject": "../EnterpriseLayer-Entities/EnterpriseLayer-Entities.csproj"
+    },
+    "InterfaceAdapters - Models/1.0.0": {
+      "type": "project",
+      "path": "../InterfaceAdapters - Models/InterfaceAdapters - Models.csproj",
+      "msbuildProject": "../InterfaceAdapters - Models/InterfaceAdapters - Models.csproj"
     }
   },
   "projectFileDependencyGroups": {

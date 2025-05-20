@@ -9,10 +9,10 @@ namespace ApplicationLayer.InstructorService
 {
     public class GetInstructorService<TEntity, TOutput>
     {
-        private readonly IRepository<TEntity> _instructorRepository;
+        private readonly ICrudRepository<TEntity> _instructorRepository;
         private readonly IPresenter<TEntity, TOutput> _presenter;
 
-        public GetInstructorService(IRepository<TEntity> instructorRepository, IPresenter<TEntity, TOutput> presenter)
+        public GetInstructorService(ICrudRepository<TEntity> instructorRepository, IPresenter<TEntity, TOutput> presenter)
         {
             _instructorRepository = instructorRepository;
             _presenter = presenter;

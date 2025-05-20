@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\EnterpriseLayer-Entities\EnterpriseLayer-Entities.csproj" />
+    <ProjectReference Include="..\InterfaceAdapters - Models\InterfaceAdapters - Models.csproj" />
   </ItemGroup>
 
 </Project>

@@ -10,9 +10,9 @@ namespace ApplicationLayer.HorarioService
 {
     public class DeleteHorarioService
     {
-        private readonly IRepository<Horario> _horarioRepository;
+        private readonly ICrudRepository<Horario> _horarioRepository;
 
-        public DeleteHorarioService(IRepository<Horario> horarioRepository)
+        public DeleteHorarioService(ICrudRepository<Horario> horarioRepository)
         {
             _horarioRepository = horarioRepository;
         }

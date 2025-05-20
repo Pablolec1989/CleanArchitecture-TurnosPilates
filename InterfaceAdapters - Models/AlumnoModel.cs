@@ -11,5 +11,6 @@ namespace InterfaceAdapters___Models
         public required string NroTelefono { get; set; }
         public List<TurnoAlumnoModel>? Turnos { get; set; }
 
+
     }
 }

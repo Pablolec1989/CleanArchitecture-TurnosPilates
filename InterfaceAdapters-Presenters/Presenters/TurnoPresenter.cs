@@ -32,8 +32,8 @@ namespace InterfaceAdapters_Presenters.Presenters
 
                 }).ToList() ?? new List<AlumnoViewModel>(),
 
-                CapacidadMaxima = t.CapacidadMaxima,
-                Disponibilidad = t.CapacidadMaxima - (t.Alumnos?.Count()) ?? 0,
+                Capacidad = t.Capacidad,
+                Disponibilidad = t.Capacidad - (t.Alumnos?.Count()) ?? 0,
             });
         }
     }

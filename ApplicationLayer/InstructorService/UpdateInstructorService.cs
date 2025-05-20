@@ -10,10 +10,10 @@ namespace ApplicationLayer.InstructorService
 {
     public class UpdateInstructorService<TDTO>
     {
-        private readonly IRepository<Instructor> _instructorRepository;
+        private readonly ICrudRepository<Instructor> _instructorRepository;
         private readonly IMapper<TDTO, Instructor> _mapper;
 
-        public UpdateInstructorService(IRepository<Instructor> instructorRepository, 
+        public UpdateInstructorService(ICrudRepository<Instructor> instructorRepository, 
                                         IMapper<TDTO, Instructor> mapper)
         {
             _instructorRepository = instructorRepository;

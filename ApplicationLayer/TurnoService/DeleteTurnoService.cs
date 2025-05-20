@@ -10,9 +10,9 @@ namespace ApplicationLayer.TurnoService
 {
     public class DeleteTurnoService
     {
-        private readonly IRepository<Turno> _turnoRepository;
+        private readonly ICrudRepository<Turno> _turnoRepository;
 
-        public DeleteTurnoService(IRepository<Turno> turnoRepository)
+        public DeleteTurnoService(ICrudRepository<Turno> turnoRepository)
         {
             _turnoRepository = turnoRepository;
         }

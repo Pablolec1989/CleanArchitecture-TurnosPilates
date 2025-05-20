@@ -15,15 +15,15 @@ namespace CleanArchitecture.Controllers
     [Route("api/alumnos")]
     public class AlumnosController : ControllerBase
     {
-        private readonly GetByIdAlumnoService<Alumno, AlumnoEnTurnoViewModel> _getByIdAlumnoService;
-        private readonly GetAlumnoService<Alumno, AlumnoViewModel> _getAlumnoService;
+        private readonly GetByIdAlumnoService<EnterpriseLayer_Entities.Alumno, AlumnoEnTurnoViewModel> _getByIdAlumnoService;
+        private readonly GetAlumnoService<EnterpriseLayer_Entities.Alumno, AlumnoViewModel> _getAlumnoService;
         private readonly AddAlumnoService<AlumnoRequestDTO> _addAlumnoService;
         private readonly UpdateAlumnoService<AlumnoRequestDTO> _updateAlumnoService;
         private readonly DeleteAlumnoService _deleteAlumnoService;
         private readonly IValidator<AlumnoRequestDTO> _validator;
 
-        public AlumnosController(GetByIdAlumnoService<Alumno, AlumnoEnTurnoViewModel> getByIdAlumnoService,
-                                GetAlumnoService<Alumno, AlumnoViewModel> getAlumnoService,
+        public AlumnosController(GetByIdAlumnoService<EnterpriseLayer_Entities.Alumno, AlumnoEnTurnoViewModel> getByIdAlumnoService,
+                                GetAlumnoService<EnterpriseLayer_Entities.Alumno, AlumnoViewModel> getAlumnoService,
                                 AddAlumnoService<AlumnoRequestDTO> addAlumnoService,
                                 UpdateAlumnoService<AlumnoRequestDTO> updateAlumnoService,
                                 DeleteAlumnoService deleteAlumnoService,
@@ -38,7 +38,7 @@ namespace CleanArchitecture.Controllers
         }
 
         [HttpGet("{id:int}")]
-        public async Task<ActionResult<Alumno>> Get(int id)
+        public async Task<ActionResult<EnterpriseLayer_Entities.Alumno>> Get(int id)
         {
             var alumno = await _getByIdAlumnoService.ExecuteAsync(id);
 
@@ -51,7 +51,7 @@ namespace CleanArchitecture.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Alumno>>> Get()
+        public async Task<ActionResult<IEnumerable<EnterpriseLayer_Entities.Alumno>>> Get()
         {
             var alumnos = await _getAlumnoService.ExecuteAsync();
             return Ok(alumnos);

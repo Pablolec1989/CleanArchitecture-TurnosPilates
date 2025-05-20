@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\LECCESE\\source\\repos\\Clean Architecture\\CleanArchitecture-TurnosPilates\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{906D0E1B-1C1D-4AD2-A854-D13F64DC56BE}|InterfaceAdapter-Repository\\InterfaceAdapter-Repository.csproj|c:\\users\\leccese\\source\\repos\\clean architecture\\cleanarchitecture-turnospilates\\interfaceadapter-repository\\repositoryturno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{906D0E1B-1C1D-4AD2-A854-D13F64DC56BE}|InterfaceAdapter-Repository\\InterfaceAdapter-Repository.csproj|solutionrelative:interfaceadapter-repository\\repositoryturno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{906D0E1B-1C1D-4AD2-A854-D13F64DC56BE}|InterfaceAdapter-Repository\\InterfaceAdapter-Repository.csproj|c:\\users\\leccese\\source\\repos\\clean architecture\\cleanarchitecture-turnospilates\\interfaceadapter-repository\\repositoryturnoalumno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{906D0E1B-1C1D-4AD2-A854-D13F64DC56BE}|InterfaceAdapter-Repository\\InterfaceAdapter-Repository.csproj|solutionrelative:interfaceadapter-repository\\repositoryturnoalumno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{99E9844C-3927-4005-9E10-CF6E640385B2}|CleanArchitecture\\CleanArchitecture.csproj|c:\\users\\leccese\\source\\repos\\clean architecture\\cleanarchitecture-turnospilates\\cleanarchitecture\\controllers\\turnoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{99E9844C-3927-4005-9E10-CF6E640385B2}|CleanArchitecture\\CleanArchitecture.csproj|solutionrelative:cleanarchitecture\\controllers\\turnoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3B546B00-4A48-40F9-98FF-E92683390F0D}|ApplicationLayer\\ApplicationLayer.csproj|c:\\users\\leccese\\source\\repos\\clean architecture\\cleanarchitecture-turnospilates\\applicationlayer\\turnoservice\\updateturnoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B546B00-4A48-40F9-98FF-E92683390F0D}|ApplicationLayer\\ApplicationLayer.csproj|solutionrelative:applicationlayer\\turnoservice\\updateturnoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{906D0E1B-1C1D-4AD2-A854-D13F64DC56BE}|InterfaceAdapter-Repository\\InterfaceAdapter-Repository.csproj|c:\\users\\leccese\\source\\repos\\clean architecture\\cleanarchitecture-turnospilates\\interfaceadapter-repository\\repositoryhorario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{906D0E1B-1C1D-4AD2-A854-D13F64DC56BE}|InterfaceAdapter-Repository\\InterfaceAdapter-Repository.csproj|solutionrelative:interfaceadapter-repository\\repositoryhorario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{906D0E1B-1C1D-4AD2-A854-D13F64DC56BE}|InterfaceAdapter-Repository\\InterfaceAdapter-Repository.csproj|c:\\users\\leccese\\source\\repos\\clean architecture\\cleanarchitecture-turnospilates\\interfaceadapter-repository\\repositoryturno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{906D0E1B-1C1D-4AD2-A854-D13F64DC56BE}|InterfaceAdapter-Repository\\InterfaceAdapter-Repository.csproj|solutionrelative:interfaceadapter-repository\\repositoryturno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A7830DF8-4A07-41D1-857C-47D93629B2AC}|InterfaceAdapters-Presenters\\InterfaceAdapters-Presenters.csproj|c:\\users\\leccese\\source\\repos\\clean architecture\\cleanarchitecture-turnospilates\\interfaceadapters-presenters\\presenters\\turnopresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7830DF8-4A07-41D1-857C-47D93629B2AC}|InterfaceAdapters-Presenters\\InterfaceAdapters-Presenters.csproj|solutionrelative:interfaceadapters-presenters\\presenters\\turnopresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -70,54 +70,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TurnosController.cs",
-              "DocumentMoniker": "C:\\Users\\LECCESE\\source\\repos\\Clean Architecture\\CleanArchitecture-TurnosPilates\\CleanArchitecture\\Controllers\\TurnosController.cs",
-              "RelativeDocumentMoniker": "CleanArchitecture\\Controllers\\TurnosController.cs",
-              "ToolTip": "C:\\Users\\LECCESE\\source\\repos\\Clean Architecture\\CleanArchitecture-TurnosPilates\\CleanArchitecture\\Controllers\\TurnosController.cs",
-              "RelativeToolTip": "CleanArchitecture\\Controllers\\TurnosController.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAMwEsAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T13:09:33.022Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "UpdateTurnoService.cs",
-              "DocumentMoniker": "C:\\Users\\LECCESE\\source\\repos\\Clean Architecture\\CleanArchitecture-TurnosPilates\\ApplicationLayer\\TurnoService\\UpdateTurnoService.cs",
-              "RelativeDocumentMoniker": "ApplicationLayer\\TurnoService\\UpdateTurnoService.cs",
-              "ToolTip": "C:\\Users\\LECCESE\\source\\repos\\Clean Architecture\\CleanArchitecture-TurnosPilates\\ApplicationLayer\\TurnoService\\UpdateTurnoService.cs",
-              "RelativeToolTip": "ApplicationLayer\\TurnoService\\UpdateTurnoService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAIAAAAAAAAAA==",
+              "Title": "RepositoryTurnoAlumno.cs",
+              "DocumentMoniker": "C:\\Users\\LECCESE\\source\\repos\\Clean Architecture\\CleanArchitecture-TurnosPilates\\InterfaceAdapter-Repository\\RepositoryTurnoAlumno.cs",
+              "RelativeDocumentMoniker": "InterfaceAdapter-Repository\\RepositoryTurnoAlumno.cs",
+              "ToolTip": "C:\\Users\\LECCESE\\source\\repos\\Clean Architecture\\CleanArchitecture-TurnosPilates\\InterfaceAdapter-Repository\\RepositoryTurnoAlumno.cs",
+              "RelativeToolTip": "InterfaceAdapter-Repository\\RepositoryTurnoAlumno.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAgwDkAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T13:08:53.708Z",
+              "WhenOpened": "2025-05-20T14:45:43.423Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "RepositoryHorario.cs",
-              "DocumentMoniker": "C:\\Users\\LECCESE\\source\\repos\\Clean Architecture\\CleanArchitecture-TurnosPilates\\InterfaceAdapter-Repository\\RepositoryHorario.cs",
-              "RelativeDocumentMoniker": "InterfaceAdapter-Repository\\RepositoryHorario.cs",
-              "ToolTip": "C:\\Users\\LECCESE\\source\\repos\\Clean Architecture\\CleanArchitecture-TurnosPilates\\InterfaceAdapter-Repository\\RepositoryHorario.cs",
-              "RelativeToolTip": "InterfaceAdapter-Repository\\RepositoryHorario.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T12:58:55.45Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "RepositoryTurno.cs",
               "DocumentMoniker": "C:\\Users\\LECCESE\\source\\repos\\Clean Architecture\\CleanArchitecture-TurnosPilates\\InterfaceAdapter-Repository\\RepositoryTurno.cs",
               "RelativeDocumentMoniker": "InterfaceAdapter-Repository\\RepositoryTurno.cs",
               "ToolTip": "C:\\Users\\LECCESE\\source\\repos\\Clean Architecture\\CleanArchitecture-TurnosPilates\\InterfaceAdapter-Repository\\RepositoryTurno.cs",
               "RelativeToolTip": "InterfaceAdapter-Repository\\RepositoryTurno.cs",
-              "ViewState": "AgIAAKgAAAAAAAAAAAAvwLkAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAIcAAAAAAAAAAAAIwJMAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T12:44:36.991Z",
+              "WhenOpened": "2025-05-20T14:20:16.783Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TurnoPresenter.cs",
+              "DocumentMoniker": "C:\\Users\\LECCESE\\source\\repos\\Clean Architecture\\CleanArchitecture-TurnosPilates\\InterfaceAdapters-Presenters\\Presenters\\TurnoPresenter.cs",
+              "RelativeDocumentMoniker": "InterfaceAdapters-Presenters\\Presenters\\TurnoPresenter.cs",
+              "ToolTip": "C:\\Users\\LECCESE\\source\\repos\\Clean Architecture\\CleanArchitecture-TurnosPilates\\InterfaceAdapters-Presenters\\Presenters\\TurnoPresenter.cs",
+              "RelativeToolTip": "InterfaceAdapters-Presenters\\Presenters\\TurnoPresenter.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAA8AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T14:17:08.191Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TurnosController.cs",
+              "DocumentMoniker": "C:\\Users\\LECCESE\\source\\repos\\Clean Architecture\\CleanArchitecture-TurnosPilates\\CleanArchitecture\\Controllers\\TurnosController.cs",
+              "RelativeDocumentMoniker": "CleanArchitecture\\Controllers\\TurnosController.cs",
+              "ToolTip": "C:\\Users\\LECCESE\\source\\repos\\Clean Architecture\\CleanArchitecture-TurnosPilates\\CleanArchitecture\\Controllers\\TurnosController.cs",
+              "RelativeToolTip": "CleanArchitecture\\Controllers\\TurnosController.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAAFMAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T14:14:39.289Z",
               "EditorCaption": ""
             }
           ]

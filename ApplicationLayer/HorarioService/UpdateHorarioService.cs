@@ -10,10 +10,10 @@ namespace ApplicationLayer.HorarioService
 {
     public class UpdateHorarioService<TDTO>
     {
-        private readonly IRepository<Horario> _horarioRepository;
+        private readonly ICrudRepository<Horario> _horarioRepository;
         private readonly IMapper<TDTO, Horario> _mapper;
 
-        public UpdateHorarioService(IRepository<Horario> horarioRepository, IMapper<TDTO, Horario> mapper)
+        public UpdateHorarioService(ICrudRepository<Horario> horarioRepository, IMapper<TDTO, Horario> mapper)
         {
             _horarioRepository = horarioRepository;
             _mapper = mapper;

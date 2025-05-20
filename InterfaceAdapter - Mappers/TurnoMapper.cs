@@ -17,13 +17,8 @@ namespace InterfaceAdapter___Mappers
             {
                 HorarioId = dto.HorarioId,
                 InstructorId = dto.InstructorId,
-                Alumnos = dto.Alumnos?.Select(alumnoId => new TurnosAlumnos
-                {
-                    AlumnoId = alumnoId
-
-                }).ToList() ?? new List<TurnosAlumnos>(),
-
-                CapacidadMaxima = dto.Capacidad
+                Alumnos = dto.Alumnos?.Select(a => new TurnosAlumnos { AlumnoId = a }).ToList(),
+                Capacidad = dto.Capacidad
             };
             return turno;
         }

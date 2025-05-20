@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using EnterpriseLayer_Entities;
+using System.ComponentModel.DataAnnotations;
 
 namespace EnterpriseLayer_Entities
 {
@@ -10,5 +11,6 @@ namespace EnterpriseLayer_Entities
         public string? Observaciones { get; set; }
         public required string NroTelefono { get; set; }
         public List<TurnosAlumnos>? Turnos { get; set; }
+
     }
 }

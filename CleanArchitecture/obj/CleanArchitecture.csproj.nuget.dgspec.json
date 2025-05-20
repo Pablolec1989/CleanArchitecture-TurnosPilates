@@ -34,6 +34,9 @@
             "projectReferences": {
               "C:\\Users\\LECCESE\\source\\repos\\Clean Architecture\\CleanArchitecture-TurnosPilates\\EnterpriseLayer-Entities\\EnterpriseLayer-Entities.csproj": {
                 "projectPath": "C:\\Users\\LECCESE\\source\\repos\\Clean Architecture\\CleanArchitecture-TurnosPilates\\EnterpriseLayer-Entities\\EnterpriseLayer-Entities.csproj"
+              },
+              "C:\\Users\\LECCESE\\source\\repos\\Clean Architecture\\CleanArchitecture-TurnosPilates\\InterfaceAdapters - Models\\InterfaceAdapters - Models.csproj": {
+                "projectPath": "C:\\Users\\LECCESE\\source\\repos\\Clean Architecture\\CleanArchitecture-TurnosPilates\\InterfaceAdapters - Models\\InterfaceAdapters - Models.csproj"
               }
             }
           }
@@ -354,6 +357,9 @@
             "projectReferences": {
               "C:\\Users\\LECCESE\\source\\repos\\Clean Architecture\\CleanArchitecture-TurnosPilates\\ApplicationLayer\\ApplicationLayer.csproj": {
                 "projectPath": "C:\\Users\\LECCESE\\source\\repos\\Clean Architecture\\CleanArchitecture-TurnosPilates\\ApplicationLayer\\ApplicationLayer.csproj"
+              },
+              "C:\\Users\\LECCESE\\source\\repos\\Clean Architecture\\CleanArchitecture-TurnosPilates\\EnterpriseLayer-Entities\\EnterpriseLayer-Entities.csproj": {
+                "projectPath": "C:\\Users\\LECCESE\\source\\repos\\Clean Architecture\\CleanArchitecture-TurnosPilates\\EnterpriseLayer-Entities\\EnterpriseLayer-Entities.csproj"
               },
               "C:\\Users\\LECCESE\\source\\repos\\Clean Architecture\\CleanArchitecture-TurnosPilates\\InterfaceAdapters - Models\\InterfaceAdapters - Models.csproj": {
                 "projectPath": "C:\\Users\\LECCESE\\source\\repos\\Clean Architecture\\CleanArchitecture-TurnosPilates\\InterfaceAdapters - Models\\InterfaceAdapters - Models.csproj"

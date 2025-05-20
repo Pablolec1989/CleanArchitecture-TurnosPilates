@@ -291,6 +291,13 @@ C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-Alumnos\Clean
 C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-Alumnos\CleanArchitecture\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-Alumnos\CleanArchitecture\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-Alumnos\CleanArchitecture\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\CleanArchitecture\obj\Debug\net9.0\CleanArchitecture.csproj.AssemblyReference.cache
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\CleanArchitecture\obj\Debug\net9.0\CleanArchitecture.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\CleanArchitecture\obj\Debug\net9.0\CleanArchitecture.AssemblyInfoInputs.cache
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\CleanArchitecture\obj\Debug\net9.0\CleanArchitecture.AssemblyInfo.cs
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\CleanArchitecture\obj\Debug\net9.0\CleanArchitecture.csproj.CoreCompileInputs.cache
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\CleanArchitecture\obj\Debug\net9.0\CleanArchitecture.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\CleanArchitecture\obj\Debug\net9.0\CleanArchitecture.sourcelink.json
 C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\CleanArchitecture\bin\Debug\net9.0\appsettings.Development.json
 C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\CleanArchitecture\bin\Debug\net9.0\appsettings.json
 C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\CleanArchitecture\bin\Debug\net9.0\CleanArchitecture.staticwebassets.endpoints.json
@@ -458,14 +465,6 @@ C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates
 C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\CleanArchitecture\bin\Debug\net9.0\InterfaceAdapters - Models.pdb
 C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\CleanArchitecture\bin\Debug\net9.0\InterfaceAdapters-Data.pdb
 C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\CleanArchitecture\bin\Debug\net9.0\InterfaceAdapters-Presenters.pdb
-C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\CleanArchitecture\obj\Debug\net9.0\CleanArchitecture.csproj.AssemblyReference.cache
-C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\CleanArchitecture\obj\Debug\net9.0\CleanArchitecture.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\CleanArchitecture\obj\Debug\net9.0\CleanArchitecture.AssemblyInfoInputs.cache
-C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\CleanArchitecture\obj\Debug\net9.0\CleanArchitecture.AssemblyInfo.cs
-C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\CleanArchitecture\obj\Debug\net9.0\CleanArchitecture.csproj.CoreCompileInputs.cache
-C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\CleanArchitecture\obj\Debug\net9.0\CleanArchitecture.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\CleanArchitecture\obj\Debug\net9.0\CleanArchitecture.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\CleanArchitecture\obj\Debug\net9.0\CleanArchitecture.sourcelink.json
 C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\CleanArchitecture\obj\Debug\net9.0\scopedcss\bundle\CleanArchitecture.styles.css
 C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\CleanArchitecture\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\CleanArchitecture\obj\Debug\net9.0\staticwebassets.development.json
@@ -483,3 +482,4 @@ C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates
 C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\CleanArchitecture\obj\Debug\net9.0\CleanArchitecture.pdb
 C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\CleanArchitecture\obj\Debug\net9.0\CleanArchitecture.genruntimeconfig.cache
 C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\CleanArchitecture\obj\Debug\net9.0\ref\CleanArchitecture.dll
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\CleanArchitecture\obj\Debug\net9.0\CleanArchitecture.MvcApplicationPartsAssemblyInfo.cs

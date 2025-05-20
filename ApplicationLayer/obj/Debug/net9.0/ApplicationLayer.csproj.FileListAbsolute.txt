@@ -32,7 +32,9 @@ C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates
 C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\ApplicationLayer\bin\Debug\net9.0\ApplicationLayer.dll
 C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\ApplicationLayer\bin\Debug\net9.0\ApplicationLayer.pdb
 C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\ApplicationLayer\bin\Debug\net9.0\EnterpriseLayer-Entities.dll
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\ApplicationLayer\bin\Debug\net9.0\InterfaceAdapters - Models.dll
 C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\ApplicationLayer\bin\Debug\net9.0\EnterpriseLayer-Entities.pdb
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\ApplicationLayer\bin\Debug\net9.0\InterfaceAdapters - Models.pdb
 C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\ApplicationLayer\obj\Debug\net9.0\ApplicationLayer.csproj.AssemblyReference.cache
 C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\ApplicationLayer\obj\Debug\net9.0\ApplicationLayer.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\ApplicationLayer\obj\Debug\net9.0\ApplicationLayer.AssemblyInfoInputs.cache

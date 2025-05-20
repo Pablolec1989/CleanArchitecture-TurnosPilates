@@ -9,10 +9,10 @@ namespace ApplicationLayer.HorarioService
 {
     public class GetHorarioService<TEntity, TOutput>
     {
-        private readonly IRepository<TEntity> _horarioRepository;
+        private readonly ICrudRepository<TEntity> _horarioRepository;
         private readonly IPresenter<TEntity, TOutput> _presenter;
 
-        public GetHorarioService(IRepository<TEntity> horarioRepository, IPresenter<TEntity, TOutput> presenter)
+        public GetHorarioService(ICrudRepository<TEntity> horarioRepository, IPresenter<TEntity, TOutput> presenter)
         {
             _horarioRepository = horarioRepository;
             _presenter = presenter;

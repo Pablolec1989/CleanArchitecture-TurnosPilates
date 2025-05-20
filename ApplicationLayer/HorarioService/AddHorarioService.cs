@@ -9,10 +9,10 @@ namespace ApplicationLayer.HorarioService
 {
     public class AddHorarioService<TDTO>
     {
-        private readonly IRepository<Horario> _horarioRepository;
+        private readonly ICrudRepository<Horario> _horarioRepository;
         private readonly IMapper<TDTO, Horario> _mapper;
 
-        public AddHorarioService(IRepository<Horario> horarioRepository, IMapper<TDTO, Horario> mapper)
+        public AddHorarioService(ICrudRepository<Horario> horarioRepository, IMapper<TDTO, Horario> mapper)
         {
             _horarioRepository = horarioRepository;
             _mapper = mapper;

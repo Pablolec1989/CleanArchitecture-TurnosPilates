@@ -21,6 +21,7 @@ namespace InterfaceAdapters_Presenters.Presenters
                 .Where(ta => ta.Turno?.Horario != null)
                 .Select(ta => $"{ta.Turno.Horario.Dia} {ta.Turno.Horario.Hora}")
                 .ToList() ?? new List<string>()
+
             };
         }
     }

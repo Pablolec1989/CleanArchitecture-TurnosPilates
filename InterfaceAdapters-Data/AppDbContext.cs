@@ -15,6 +15,7 @@ namespace InterfaceAdapters_Data
         public DbSet<HorarioModel> Horarios { get; set; }
         public DbSet<TurnoModel> Turnos { get; set; }
         public DbSet<TurnoAlumnoModel> TurnosAlumnos { get; set; }
+        public DbSet<TarifaModel> Tarifas { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -115,7 +116,7 @@ namespace InterfaceAdapters_Data
                     .OnDelete(DeleteBehavior.Cascade);
             });
 
-            // Opcional: Configurar nombres de columnas FK explícitamente
+            // Configurar nombres de columnas FK explícitamente
             modelBuilder.Entity<TurnoModel>()
                 .Property(t => t.InstructorId)
                 .HasColumnName("InstructorId");
@@ -123,6 +124,17 @@ namespace InterfaceAdapters_Data
             modelBuilder.Entity<TurnoModel>()
                 .Property(t => t.HorarioId)
                 .HasColumnName("HorarioId");
+
+            // Configuracion de Tarifa
+            modelBuilder.Entity<TarifaModel>(entity =>
+            {
+                entity.ToTable("Tarifas");
+
+                entity.HasKey(t => t.Id);
+                entity.Property(t => t.Frecuencia_turno).IsRequired();
+                entity.Property(t => t.Precio)
+                .HasColumnType("decimal(18,2)").IsRequired();
+            });
         }
     }
 }

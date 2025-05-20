@@ -9,10 +9,10 @@ namespace ApplicationLayer.TurnoService
 {
     public class GetTurnoService<TEntity, TOutput>
     {
-        private readonly IRepository<TEntity> _turnoRepository;
+        private readonly ICrudRepository<TEntity> _turnoRepository;
         private readonly IPresenter<TEntity, TOutput> _presenter;
 
-        public GetTurnoService(IRepository<TEntity> turnoRepository, IPresenter<TEntity, TOutput> presenter)
+        public GetTurnoService(ICrudRepository<TEntity> turnoRepository, IPresenter<TEntity, TOutput> presenter)
         {
             _turnoRepository = turnoRepository;
             _presenter = presenter;

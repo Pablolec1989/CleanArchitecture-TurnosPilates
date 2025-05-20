@@ -377,6 +377,115 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "CleanArchitecture.Controllers.TarifasController",
+    "Method": "Get",
+    "RelativePath": "api/tarifas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[EnterpriseLayer_Entities.Tarifa, EnterpriseLayer-Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CleanArchitecture.Controllers.TarifasController",
+    "Method": "Post",
+    "RelativePath": "api/tarifas",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Frecuencia_turno",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Precio",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CleanArchitecture.Controllers.TarifasController",
+    "Method": "GetById",
+    "RelativePath": "api/tarifas/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "EnterpriseLayer_Entities.Tarifa",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CleanArchitecture.Controllers.TarifasController",
+    "Method": "Put",
+    "RelativePath": "api/tarifas/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "Frecuencia_turno",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Precio",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CleanArchitecture.Controllers.TarifasController",
+    "Method": "Delete",
+    "RelativePath": "api/tarifas/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "CleanArchitecture.Controllers.TurnosController",
     "Method": "Get",
     "RelativePath": "api/turnos",

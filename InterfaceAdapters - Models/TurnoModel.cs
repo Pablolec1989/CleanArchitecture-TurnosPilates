@@ -22,6 +22,5 @@ namespace InterfaceAdapters___Models
         [ForeignKey("InstructorId")]
         public InstructorModel? Instructor { get; set; }
 
-
     }
 }

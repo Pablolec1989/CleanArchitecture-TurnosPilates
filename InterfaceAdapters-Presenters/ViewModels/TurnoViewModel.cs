@@ -14,7 +14,7 @@ namespace InterfaceAdapters_Presenters.ViewModels
         public HorarioViewModel? Horario { get; set; }
         public InstructorViewModel? Instructor { get; set; }
         public List<AlumnoViewModel>? Alumnos { get; set; }
-        public int CapacidadMaxima { get; set; }
+        public int Capacidad { get; set; }
         public int Disponibilidad { get; set; }
     }
 }

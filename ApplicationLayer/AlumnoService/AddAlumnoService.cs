@@ -10,10 +10,10 @@ namespace ApplicationLayer.AlumnoService
 {
     public class AddAlumnoService<TDTO>
     {
-        private readonly IRepository<Alumno> _alumnoRepository;
+        private readonly ICrudRepository<Alumno> _alumnoRepository;
         private readonly IMapper<TDTO, Alumno> _mapper;
 
-        public AddAlumnoService(IRepository<Alumno> alumnoRepository, IMapper<TDTO, Alumno> mapper)
+        public AddAlumnoService(ICrudRepository<Alumno> alumnoRepository, IMapper<TDTO, Alumno> mapper)
         {
             _alumnoRepository = alumnoRepository;
             _mapper = mapper;

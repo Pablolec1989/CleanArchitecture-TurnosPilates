@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace InterfaceAdapters_Data.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250425124920_AddAlumno")]
-    partial class AddAlumno
+    [Migration("20250515131851_Tarifas")]
+    partial class Tarifas
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -109,6 +109,25 @@ namespace InterfaceAdapters_Data.Migrations
                     b.ToTable("Instructor", (string)null);
                 });
 
+            modelBuilder.Entity("InterfaceAdapters___Models.TarifaModel", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("Frecuencia_turno")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("Precio")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Tarifas", (string)null);
+                });
+
             modelBuilder.Entity("InterfaceAdapters___Models.TurnoAlumnoModel", b =>
                 {
                     b.Property<int>("AlumnoId")
@@ -135,6 +154,9 @@ namespace InterfaceAdapters_Data.Migrations
                     b.Property<int>("Capacidad")
                         .HasColumnType("int");
 
+                    b.Property<int>("Disponibilidad")
+                        .HasColumnType("int");
+
                     b.Property<int>("HorarioId")
                         .HasColumnType("int")
                         .HasColumnName("HorarioId");
@@ -155,13 +177,13 @@ namespace InterfaceAdapters_Data.Migrations
             modelBuilder.Entity("InterfaceAdapters___Models.TurnoAlumnoModel", b =>
                 {
                     b.HasOne("InterfaceAdapters___Models.AlumnoModel", "Alumno")
-                        .WithMany("TurnoAlumnos")
+                        .WithMany("Turnos")
                         .HasForeignKey("AlumnoId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("InterfaceAdapters___Models.TurnoModel", "Turno")
-                        .WithMany("TurnoAlumnos")
+                        .WithMany("Alumnos")
                         .HasForeignKey("TurnoId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -191,7 +213,7 @@ namespace InterfaceAdapters_Data.Migrations
 
             modelBuilder.Entity("InterfaceAdapters___Models.AlumnoModel", b =>
                 {
-                    b.Navigation("TurnoAlumnos");
+                    b.Navigation("Turnos");
                 });
 
             modelBuilder.Entity("InterfaceAdapters___Models.HorarioModel", b =>
@@ -206,7 +228,7 @@ namespace InterfaceAdapters_Data.Migrations
 
             modelBuilder.Entity("InterfaceAdapters___Models.TurnoModel", b =>
                 {
-                    b.Navigation("TurnoAlumnos");
+                    b.Navigation("Alumnos");
                 });
 #pragma warning restore 612, 618
         }

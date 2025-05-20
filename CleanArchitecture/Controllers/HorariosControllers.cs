@@ -1,11 +1,9 @@
 ﻿using ApplicationLayer.HorarioService;
 using EnterpriseLayer_Entities;
 using FluentValidation;
-using FluentValidation.Results;
 using InterfaceAdapter___Mappers.DTOs.Requests;
 using InterfaceAdapters_Presenters.ViewModels;
 using Microsoft.AspNetCore.Mvc;
-using System.ComponentModel.DataAnnotations;
 using ValidationException = System.ComponentModel.DataAnnotations.ValidationException;
 using ValidationResult = FluentValidation.Results.ValidationResult;
 

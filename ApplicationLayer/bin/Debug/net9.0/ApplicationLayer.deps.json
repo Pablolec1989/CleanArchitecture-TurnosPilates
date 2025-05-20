@@ -21,6 +21,17 @@
             "fileVersion": "1.0.0.0"
           }
         }
+      },
+      "InterfaceAdapters - Models/1.0.0": {
+        "dependencies": {
+          "EnterpriseLayer-Entities": "1.0.0"
+        },
+        "runtime": {
+          "InterfaceAdapters - Models.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -31,6 +42,11 @@
       "sha512": ""
     },
     "EnterpriseLayer-Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "InterfaceAdapters - Models/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace InterfaceAdapter_Repository
 {
-    public class RepositoryInstructor : IRepository<Instructor>
+    public class RepositoryInstructor : ICrudRepository<Instructor>
     {
         private readonly AppDbContext _dBcontext;
 

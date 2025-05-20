@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ApplicationLayer
 {
-    public interface IRepository<T>
+    public interface ICrudRepository<T>
     {
         Task<T> GetByIdAsync(int id);
         Task<IEnumerable<T>> GetAllAsync();

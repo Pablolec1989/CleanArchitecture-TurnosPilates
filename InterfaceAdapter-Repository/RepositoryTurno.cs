@@ -14,7 +14,7 @@ using System.Threading.Tasks;
 
 namespace InterfaceAdapter_Repository
 {
-    public class RepositoryTurno : IRepository<Turno>
+    public class RepositoryTurno : ICrudRepository<Turno>
     {
         private readonly AppDbContext _dbContext;
 
@@ -69,7 +69,7 @@ namespace InterfaceAdapter_Repository
                     }
 
                 }).ToList() ?? new List<TurnosAlumnos>(),
-                CapacidadMaxima = turnoModel.Capacidad,
+                Capacidad = turnoModel.Capacidad,
             };
         }
 
@@ -114,7 +114,7 @@ namespace InterfaceAdapter_Repository
                         NroTelefono = ta.Alumno.NroTelefono
                     }
                 }).ToList() ?? new List<TurnosAlumnos>(),
-                CapacidadMaxima = turnoModel.Capacidad,
+                Capacidad = turnoModel.Capacidad,
             }).ToList();
         }
 
@@ -124,24 +124,14 @@ namespace InterfaceAdapter_Repository
             {
                 HorarioId = turno.HorarioId,
                 InstructorId = turno.InstructorId,
-                Capacidad = turno.CapacidadMaxima
+                Capacidad = turno.Capacidad
             };
 
             await _dbContext.AddAsync(turnoModel);
             await _dbContext.SaveChangesAsync();
 
-            if(turno.Alumnos != null && turno.Alumnos.Any())
-            {
-                var relacionesAlumno = turno.Alumnos.Select(ta => new TurnoAlumnoModel
-                {
-                    AlumnoId = ta.AlumnoId,
-                    TurnoId = turnoModel.Id
+            turno.Id = turnoModel.Id;
 
-                }).ToList();
-
-                await _dbContext.TurnosAlumnos.AddRangeAsync(relacionesAlumno);
-                await _dbContext.SaveChangesAsync();
-            }
         }
 
         public async Task UpdateAsync(int id, Turno turno)
@@ -156,32 +146,9 @@ namespace InterfaceAdapter_Repository
             {
                 turnoModel.InstructorId = turno.InstructorId;
                 turnoModel.HorarioId = turno.HorarioId;
-                turnoModel.Capacidad = turno.CapacidadMaxima;
+                turnoModel.Capacidad = turno.Capacidad;
             }
 
-            // 1. Identificar las relaciones a eliminar
-            var alumnosAEliminar = turnoModel.Alumnos
-                .Where(existingTa => !turno.Alumnos.Any(nuevoTa => nuevoTa.AlumnoId == existingTa.AlumnoId))
-                .ToList();
-
-            // 2. Eliminar las relaciones innecesarias
-            _dbContext.TurnosAlumnos.RemoveRange(alumnosAEliminar);
-
-            // 3. Identificar las relaciones a agregar
-            var alumnosAAgregar = turno.Alumnos
-                .Where(nuevoTa => !turnoModel.Alumnos
-                .Any(existingTa => existingTa.AlumnoId == nuevoTa.AlumnoId))
-                .Select(nuevoTa => new TurnoAlumnoModel
-                {
-                    AlumnoId = nuevoTa.AlumnoId,
-                    TurnoId = turno.Id
-                })
-                .ToList();
-
-            // 4. Agregar las nuevas relaciones
-            await _dbContext.TurnosAlumnos.AddRangeAsync(alumnosAAgregar);
-
-            // Guardar todos los cambios
             await _dbContext.SaveChangesAsync();
         }
 

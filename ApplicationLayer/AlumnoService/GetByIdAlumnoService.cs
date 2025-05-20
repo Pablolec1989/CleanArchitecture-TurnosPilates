@@ -10,10 +10,10 @@ namespace ApplicationLayer.AlumnoService
 {
     public class GetByIdAlumnoService<Alumno, AlumnoEnTurnoViewModel>
     {
-        private readonly IRepository<Alumno> _alumnoRepository;
+        private readonly ICrudRepository<Alumno> _alumnoRepository;
         private readonly IPresenterById<Alumno, AlumnoEnTurnoViewModel> _presenter;
 
-        public GetByIdAlumnoService(IRepository<Alumno> alumnoRepository, IPresenterById<Alumno, AlumnoEnTurnoViewModel> presenter)
+        public GetByIdAlumnoService(ICrudRepository<Alumno> alumnoRepository, IPresenterById<Alumno, AlumnoEnTurnoViewModel> presenter)
         {
             _alumnoRepository = alumnoRepository;
             _presenter = presenter;

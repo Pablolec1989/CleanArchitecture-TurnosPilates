@@ -10,9 +10,9 @@ namespace ApplicationLayer.HorarioService
 {
     public class GetByIdHorarioService
     {
-        private readonly IRepository<Horario> _horarioRepository;
+        private readonly ICrudRepository<Horario> _horarioRepository;
 
-        public GetByIdHorarioService(IRepository<Horario> horarioRepository)
+        public GetByIdHorarioService(ICrudRepository<Horario> horarioRepository)
         {
             _horarioRepository = horarioRepository;
         }

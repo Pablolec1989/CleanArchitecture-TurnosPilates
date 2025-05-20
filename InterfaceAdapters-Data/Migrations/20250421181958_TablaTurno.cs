@@ -32,7 +32,7 @@ namespace InterfaceAdapters_Data.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     InstructorId = table.Column<int>(type: "int", nullable: true),
                     AlumnosIds = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    CapacidadMaxima = table.Column<int>(type: "int", nullable: false)
+                    Capacidad = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {

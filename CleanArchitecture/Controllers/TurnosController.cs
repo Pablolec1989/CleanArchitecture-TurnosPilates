@@ -67,14 +67,22 @@ namespace CleanArchitecture.Controllers
                 return ValidationProblem(result.ToString());
             }
 
-            await _addTurnoService.ExecuteAsync(turnoRequest);
-            return Created();
+            try
+            {
+                await _addTurnoService.ExecuteAsync(turnoRequest, turnoRequest.Alumnos);
+                return Created();
+            }
+            catch (Exception ex)
+            {
+
+                return BadRequest(ex.Message);
+            }
         }
 
         [HttpPut("{id:int}")]
-        public async Task<ActionResult> Put (int id, [FromForm] TurnoRequestDTO turnoRequest)
+        public async Task<ActionResult> Put (int id, [FromForm] TurnoRequestDTO turnoRequestDTO)
         {
-            ValidationResult result = await _validator.ValidateAsync(turnoRequest);
+            ValidationResult result = await _validator.ValidateAsync(turnoRequestDTO);
 
             if (!result.IsValid)
             {
@@ -82,7 +90,7 @@ namespace CleanArchitecture.Controllers
             }
             try
             {
-                await _updateTurnoService.ExecuteAsync(id, turnoRequest);
+                await _updateTurnoService.ExecuteAsync(id, turnoRequestDTO, turnoRequestDTO.Alumnos);
                 return NoContent();
             }
             catch (ValidationException ex)

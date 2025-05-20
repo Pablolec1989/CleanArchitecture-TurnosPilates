@@ -4,9 +4,9 @@ namespace ApplicationLayer.AlumnoService
 {
     public class GetAlumnoService<TEntity, TOutput>
     {
-        private readonly IRepository<Alumno> _alumnoRepository;
+        private readonly ICrudRepository<Alumno> _alumnoRepository;
 
-        public GetAlumnoService(IRepository<Alumno> alumnoRepository)
+        public GetAlumnoService(ICrudRepository<Alumno> alumnoRepository)
         {
             _alumnoRepository = alumnoRepository;
         }

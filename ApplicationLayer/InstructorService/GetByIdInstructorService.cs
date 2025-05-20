@@ -10,9 +10,9 @@ namespace ApplicationLayer.InstructorService
 {
     public class GetByIdInstructorService
     {
-        private readonly ApplicationLayer.IRepository<Instructor> _instructorRepository;
+        private readonly ApplicationLayer.ICrudRepository<Instructor> _instructorRepository;
 
-        public GetByIdInstructorService(IRepository<Instructor> instructorRepository)
+        public GetByIdInstructorService(ICrudRepository<Instructor> instructorRepository)
         {
             _instructorRepository = instructorRepository;
         }

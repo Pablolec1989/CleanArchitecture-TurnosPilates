@@ -12,8 +12,7 @@ namespace EnterpriseLayer_Entities
         public int Id { get; set; }
         public int HorarioId { get; set; }
         public int? InstructorId { get; set; }
-        public int CapacidadMaxima { get; set; } //Logica interna
-        public int Disponibilidad { get; set; }
+        public int Capacidad { get; set; }
         public List<TurnosAlumnos>? Alumnos { get; set; }
         //Prop de navegacion
         public Horario? Horario { get; set; }

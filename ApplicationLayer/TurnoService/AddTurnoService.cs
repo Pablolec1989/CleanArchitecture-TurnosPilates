@@ -9,19 +9,29 @@ namespace ApplicationLayer.TurnoService
 {
     public class AddTurnoService<TDTO>
     {
-        private readonly IRepository<Turno> _turnoRepository;
+        private readonly ICrudRepository<Turno> _turnoRepository;
         private readonly IMapper<TDTO, Turno> _mapper;
+        private readonly ITurnoAlumnoRepository _repositoryTurnoAlumno;
 
-        public AddTurnoService(IRepository<Turno> turnoRepository, IMapper<TDTO, Turno> mapper)
+        public AddTurnoService(ICrudRepository<Turno> turnoRepository, 
+                                IMapper<TDTO, Turno> mapper, 
+                                ITurnoAlumnoRepository repositoryTurnoAlumno)
         {
             _turnoRepository = turnoRepository;
             _mapper = mapper;
+            _repositoryTurnoAlumno = repositoryTurnoAlumno;
         }
 
-        public async Task ExecuteAsync(TDTO turnoDTO)
+        public async Task ExecuteAsync(TDTO turnoDTO, List<int> alumnoIdsIniciales = null)
         {
-            var turno = _mapper.ToEntity(turnoDTO); //Convierto el DTO a TurnoModel para guardarlo en la BD
+            var turno = _mapper.ToEntity(turnoDTO);
             await _turnoRepository.AddAsync(turno);
+
+            if (alumnoIdsIniciales != null && alumnoIdsIniciales.Any())
+            {
+                await _repositoryTurnoAlumno.AddAlumnosToTurnoAsync(turno.Id, alumnoIdsIniciales);
+            }
+           
         }
     }
 }

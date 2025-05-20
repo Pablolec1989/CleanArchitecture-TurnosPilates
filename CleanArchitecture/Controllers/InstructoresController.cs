@@ -18,7 +18,7 @@ namespace CleanArchitecture.Controllers
         private readonly AddInstructorService<InstructorRequestDTO> _addInstructorService;
         private readonly UpdateInstructorService<InstructorRequestDTO> _updateInstructorService;
         private readonly DeleteInstructorService _deleteInstructorService;
-        private readonly IRepository<Instructor> _repository;
+        private readonly ICrudRepository<Instructor> _repository;
         private readonly IMapper<InstructorRequestDTO, Instructor> _mapper;
         private readonly IValidator<InstructorRequestDTO> _validator;
 
@@ -27,7 +27,7 @@ namespace CleanArchitecture.Controllers
                                         AddInstructorService<InstructorRequestDTO> addInstructorService,
                                         UpdateInstructorService<InstructorRequestDTO> updateInstructorService,
                                         DeleteInstructorService deleteInstructorService,
-                                        IRepository<Instructor> repository,
+                                        ICrudRepository<Instructor> repository,
                                         IMapper<InstructorRequestDTO, Instructor> mapper,
                                         IValidator<InstructorRequestDTO> validator)
         {

@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace InterfaceAdapter_Repository
 {
-    public class RepositoryHorario : IRepository<Horario>
+    public class RepositoryHorario : ICrudRepository<Horario>
     {
         private readonly AppDbContext _dbContext;
         public RepositoryHorario(AppDbContext dbContext)

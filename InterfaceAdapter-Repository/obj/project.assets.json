@@ -1075,7 +1075,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
-          "EnterpriseLayer-Entities": "1.0.0"
+          "EnterpriseLayer-Entities": "1.0.0",
+          "InterfaceAdapters - Models": "1.0.0"
         },
         "compile": {
           "bin/placeholder/ApplicationLayer.dll": {}
@@ -3008,6 +3009,7 @@
   "projectFileDependencyGroups": {
     "net9.0": [
       "ApplicationLayer >= 1.0.0",
+      "EnterpriseLayer-Entities >= 1.0.0",
       "InterfaceAdapters - Models >= 1.0.0",
       "InterfaceAdapters-Data >= 1.0.0",
       "InterfaceAdapters-Presenters >= 1.0.0"
@@ -3047,6 +3049,9 @@
           "projectReferences": {
             "C:\\Users\\LECCESE\\source\\repos\\Clean Architecture\\CleanArchitecture-TurnosPilates\\ApplicationLayer\\ApplicationLayer.csproj": {
               "projectPath": "C:\\Users\\LECCESE\\source\\repos\\Clean Architecture\\CleanArchitecture-TurnosPilates\\ApplicationLayer\\ApplicationLayer.csproj"
+            },
+            "C:\\Users\\LECCESE\\source\\repos\\Clean Architecture\\CleanArchitecture-TurnosPilates\\EnterpriseLayer-Entities\\EnterpriseLayer-Entities.csproj": {
+              "projectPath": "C:\\Users\\LECCESE\\source\\repos\\Clean Architecture\\CleanArchitecture-TurnosPilates\\EnterpriseLayer-Entities\\EnterpriseLayer-Entities.csproj"
             },
             "C:\\Users\\LECCESE\\source\\repos\\Clean Architecture\\CleanArchitecture-TurnosPilates\\InterfaceAdapters - Models\\InterfaceAdapters - Models.csproj": {
               "projectPath": "C:\\Users\\LECCESE\\source\\repos\\Clean Architecture\\CleanArchitecture-TurnosPilates\\InterfaceAdapters - Models\\InterfaceAdapters - Models.csproj"

@@ -1,15 +1,13 @@
 ﻿using ApplicationLayer;
-using ApplicationLayer.Exception;
 using EnterpriseLayer_Entities;
 using InterfaceAdapters___Models;
 using InterfaceAdapters_Data;
-using InterfaceAdapters_Presenters.ViewModels;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Identity.Client;
+using System.Linq.Expressions;
 
 namespace InterfaceAdapter_Repository
 {
-    public class RepositoryAlumno : IRepository<Alumno>
+    public class RepositoryAlumno : ICrudRepository<Alumno>
     {
         private readonly AppDbContext _dbContext;
 
@@ -109,5 +107,6 @@ namespace InterfaceAdapter_Repository
             var alumnoExiste = await _dbContext.Alumnos.Where(a => a.Id == id).ExecuteDeleteAsync(); 
             await _dbContext.SaveChangesAsync();
         }
+
     }
 }

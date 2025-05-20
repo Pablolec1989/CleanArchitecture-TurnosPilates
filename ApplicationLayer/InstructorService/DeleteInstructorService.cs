@@ -10,9 +10,9 @@ namespace ApplicationLayer.InstructorService
 {
     public class DeleteInstructorService
     {
-        private readonly IRepository<Instructor> _instructorRepositorio;
+        private readonly ICrudRepository<Instructor> _instructorRepositorio;
 
-        public DeleteInstructorService(IRepository<Instructor> instructorRepositorio)
+        public DeleteInstructorService(ICrudRepository<Instructor> instructorRepositorio)
         {
             _instructorRepositorio = instructorRepositorio;
         }

@@ -10,9 +10,9 @@ namespace ApplicationLayer.TurnoService
 {
     public class GetByIdTurnoService
     {
-        private readonly IRepository<Turno> _turnoRepository;
+        private readonly ICrudRepository<Turno> _turnoRepository;
 
-        public GetByIdTurnoService(IRepository<Turno> turnoRepository)
+        public GetByIdTurnoService(ICrudRepository<Turno> turnoRepository)
         {
             _turnoRepository = turnoRepository;
         }

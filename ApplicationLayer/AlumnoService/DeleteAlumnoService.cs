@@ -10,9 +10,9 @@ namespace ApplicationLayer.AlumnoService
 {
     public class DeleteAlumnoService
     {
-        private readonly IRepository<Alumno> _alumnoRepositorio;
+        private readonly ICrudRepository<Alumno> _alumnoRepositorio;
 
-        public DeleteAlumnoService(IRepository<Alumno> alumnoRepositorio)
+        public DeleteAlumnoService(ICrudRepository<Alumno> alumnoRepositorio)
         {
             _alumnoRepositorio = alumnoRepositorio;
         }

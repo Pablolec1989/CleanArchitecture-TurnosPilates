@@ -1838,7 +1838,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
-          "EnterpriseLayer-Entities": "1.0.0"
+          "EnterpriseLayer-Entities": "1.0.0",
+          "InterfaceAdapters - Models": "1.0.0"
         },
         "compile": {
           "bin/placeholder/ApplicationLayer.dll": {}
@@ -1876,6 +1877,7 @@
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
           "ApplicationLayer": "1.0.0",
+          "EnterpriseLayer-Entities": "1.0.0",
           "InterfaceAdapters - Models": "1.0.0",
           "InterfaceAdapters-Data": "1.0.0",
           "InterfaceAdapters-Presenters": "1.0.0"
