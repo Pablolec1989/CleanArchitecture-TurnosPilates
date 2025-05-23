@@ -11,4 +11,8 @@
     <ProjectReference Include="..\InterfaceAdapters - Models\InterfaceAdapters - Models.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="TurnoAlumnoService\" />
+  </ItemGroup>
+
 </Project>

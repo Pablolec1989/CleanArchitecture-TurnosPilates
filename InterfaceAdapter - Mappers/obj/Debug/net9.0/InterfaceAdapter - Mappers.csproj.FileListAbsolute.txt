@@ -32,12 +32,6 @@ C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-Alumnos\Inter
 C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-Alumnos\InterfaceAdapter - Mappers\obj\Debug\net9.0\refint\InterfaceAdapter - Mappers.dll
 C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-Alumnos\InterfaceAdapter - Mappers\obj\Debug\net9.0\InterfaceAdapter - Mappers.pdb
 C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-Alumnos\InterfaceAdapter - Mappers\obj\Debug\net9.0\ref\InterfaceAdapter - Mappers.dll
-C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\InterfaceAdapter - Mappers\obj\Debug\net9.0\InterfaceAdapter - Mappers.csproj.AssemblyReference.cache
-C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\InterfaceAdapter - Mappers\obj\Debug\net9.0\InterfaceAdapter - Mappers.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\InterfaceAdapter - Mappers\obj\Debug\net9.0\InterfaceAdapter - Mappers.AssemblyInfoInputs.cache
-C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\InterfaceAdapter - Mappers\obj\Debug\net9.0\InterfaceAdapter - Mappers.AssemblyInfo.cs
-C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\InterfaceAdapter - Mappers\obj\Debug\net9.0\InterfaceAdapter - Mappers.csproj.CoreCompileInputs.cache
-C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\InterfaceAdapter - Mappers\obj\Debug\net9.0\InterfaceAdapter - Mappers.sourcelink.json
 C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\InterfaceAdapter - Mappers\bin\Debug\net9.0\InterfaceAdapter - Mappers.deps.json
 C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\InterfaceAdapter - Mappers\bin\Debug\net9.0\InterfaceAdapter - Mappers.dll
 C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\InterfaceAdapter - Mappers\bin\Debug\net9.0\InterfaceAdapter - Mappers.pdb
@@ -47,6 +41,12 @@ C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates
 C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\InterfaceAdapter - Mappers\bin\Debug\net9.0\ApplicationLayer.pdb
 C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\InterfaceAdapter - Mappers\bin\Debug\net9.0\EnterpriseLayer-Entities.pdb
 C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\InterfaceAdapter - Mappers\bin\Debug\net9.0\InterfaceAdapters - Models.pdb
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\InterfaceAdapter - Mappers\obj\Debug\net9.0\InterfaceAdapter - Mappers.csproj.AssemblyReference.cache
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\InterfaceAdapter - Mappers\obj\Debug\net9.0\InterfaceAdapter - Mappers.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\InterfaceAdapter - Mappers\obj\Debug\net9.0\InterfaceAdapter - Mappers.AssemblyInfoInputs.cache
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\InterfaceAdapter - Mappers\obj\Debug\net9.0\InterfaceAdapter - Mappers.AssemblyInfo.cs
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\InterfaceAdapter - Mappers\obj\Debug\net9.0\InterfaceAdapter - Mappers.csproj.CoreCompileInputs.cache
+C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\InterfaceAdapter - Mappers\obj\Debug\net9.0\InterfaceAdapter - Mappers.sourcelink.json
 C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\InterfaceAdapter - Mappers\obj\Debug\net9.0\Interfac.F3C2C9FE.Up2Date
 C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\InterfaceAdapter - Mappers\obj\Debug\net9.0\InterfaceAdapter - Mappers.dll
 C:\Users\LECCESE\source\repos\Clean Architecture\CleanArchitecture-TurnosPilates\InterfaceAdapter - Mappers\obj\Debug\net9.0\refint\InterfaceAdapter - Mappers.dll

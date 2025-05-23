@@ -19,7 +19,7 @@ namespace InterfaceAdapter_Repository
         public async Task<Alumno> GetByIdAsync(int id)
         {
             var alumnoModel = await _dbContext.Alumnos
-                .Include(a => a.Turnos)
+                .Include(a => a.TurnoAlumno)
                     .ThenInclude(ta => ta.Turno)
                     .ThenInclude(t => t.Horario)
                 .FirstOrDefaultAsync(a => a.Id == id);
@@ -36,7 +36,7 @@ namespace InterfaceAdapter_Repository
                 Apellido = alumnoModel.Apellido,
                 Observaciones = alumnoModel.Observaciones,
                 NroTelefono = alumnoModel.NroTelefono,
-                Turnos = alumnoModel.Turnos?.Select(ta => new TurnosAlumnos
+                Turnos = alumnoModel.TurnoAlumno?.Select(ta => new TurnoAlumno
                 {
                     Turno = ta.Turno != null ? new Turno
                     {
@@ -47,7 +47,7 @@ namespace InterfaceAdapter_Repository
                         }
                     } : null
 
-                }).ToList() ?? new List<TurnosAlumnos>(),
+                }).ToList() ?? new List<TurnoAlumno>(),
 
             };
         }
@@ -55,7 +55,7 @@ namespace InterfaceAdapter_Repository
         public async Task<IEnumerable<Alumno>> GetAllAsync()
         {
             return await _dbContext.Alumnos
-                .Include(a => a.Turnos)
+                .Include(a => a.TurnoAlumno)
                 .Select(a => new Alumno()
                 {
                     Id = a.Id,
@@ -63,12 +63,12 @@ namespace InterfaceAdapter_Repository
                     Apellido = a.Apellido,
                     Observaciones = a.Observaciones,
                     NroTelefono = a.NroTelefono,
-                    Turnos = a.Turnos.Select(ta => new TurnosAlumnos
+                    Turnos = a.TurnoAlumno.Select(ta => new TurnoAlumno
                     {
                         TurnoId = ta.TurnoId,
                         AlumnoId = ta.AlumnoId,
 
-                    }).ToList() ?? new List<TurnosAlumnos>(),
+                    }).ToList() ?? new List<TurnoAlumno>(),
 
                 }).ToListAsync();
         }

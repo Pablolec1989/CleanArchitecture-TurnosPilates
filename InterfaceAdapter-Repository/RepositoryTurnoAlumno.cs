@@ -69,5 +69,18 @@ namespace InterfaceAdapter_Repository
 
             await _dbContext.SaveChangesAsync();
         }
+
+        public async Task DeleteAlumnoEnTurnoAsync(int turnoId, IEnumerable<int> alumnoIds)
+        {
+            var relacionesARemover = await _dbContext.TurnosAlumnos
+                                    .Where(ta => ta.TurnoId == turnoId && alumnoIds.Contains(ta.AlumnoId))
+                                    .ToListAsync();
+
+            if (relacionesARemover.Any())
+            {
+                _dbContext.TurnosAlumnos.RemoveRange(relacionesARemover);
+                await _dbContext.SaveChangesAsync();
+            }
+        }
     }
 }

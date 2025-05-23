@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EnterpriseLayer_Entities
 {
-    public class TurnosAlumnos
+    public class TurnoAlumno
     {
         public int AlumnoId { get; set; }
         public int TurnoId { get; set; }

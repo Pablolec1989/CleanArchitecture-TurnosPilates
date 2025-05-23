@@ -10,7 +10,7 @@ namespace ApplicationLayer
     public interface ITurnoAlumnoRepository
     {
         Task AddAlumnosToTurnoAsync(int turnoId, IEnumerable<int> alumnoIds);
-
         Task UpdateAlumnosToTurnoAsync(int turnoId, IEnumerable<int> alumnoIds);
+        Task DeleteAlumnoEnTurnoAsync(int turnoId, IEnumerable<int> alumnoIds);
     }
 }

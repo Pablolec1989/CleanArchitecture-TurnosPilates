@@ -64,7 +64,7 @@ namespace InterfaceAdapter_Repository
                 PorcentajeDePago = instructor.PorcentajeDePago
             };
 
-            await _dBcontext.AddAsync(instructorModel);
+            await _dBcontext.Instructores.AddAsync(instructorModel);
             await _dBcontext.SaveChangesAsync();
         }
 

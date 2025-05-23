@@ -29,7 +29,7 @@ namespace InterfaceAdapter_Repository
             var turnoModel = await _dbContext.Turnos
                 .Include(t => t.Horario)
                 .Include(t => t.Instructor)
-                .Include(t => t.Alumnos).ThenInclude(ta => ta.Alumno)
+                .Include(t => t.TurnoAlumno).ThenInclude(ta => ta.Alumno)
                 .FirstOrDefaultAsync(t => t.Id ==id);
             
             if (turnoModel is null)
@@ -55,7 +55,7 @@ namespace InterfaceAdapter_Repository
                     NroTelefono = turnoModel.Instructor.NroTelefono,
                     PorcentajeDePago = turnoModel.Instructor.PorcentajeDePago,
                 },
-                Alumnos = turnoModel.Alumnos?.Select(ta => new TurnosAlumnos
+                Alumnos = turnoModel.TurnoAlumno?.Select(ta => new TurnoAlumno
                 {
                     TurnoId = ta.TurnoId,
                     AlumnoId = ta.AlumnoId,
@@ -68,8 +68,9 @@ namespace InterfaceAdapter_Repository
                         NroTelefono = ta.Alumno.NroTelefono
                     }
 
-                }).ToList() ?? new List<TurnosAlumnos>(),
+                }).ToList() ?? new List<TurnoAlumno>(),
                 Capacidad = turnoModel.Capacidad,
+                Disponibilidad = turnoModel.Capacidad - (turnoModel.TurnoAlumno?.Count() ?? 0),
             };
         }
 
@@ -79,7 +80,7 @@ namespace InterfaceAdapter_Repository
             var turnos = await _dbContext.Turnos
                 .Include(t => t.Horario)
                 .Include(t => t.Instructor)
-                .Include(t => t.Alumnos).ThenInclude(ta => ta.Alumno)
+                .Include(t => t.TurnoAlumno).ThenInclude(ta => ta.Alumno)
                 .ToListAsync();
 
             return turnos.Select(turnoModel => new Turno
@@ -101,7 +102,7 @@ namespace InterfaceAdapter_Repository
                     NroTelefono = turnoModel.Instructor.NroTelefono,
                     PorcentajeDePago = turnoModel.Instructor.PorcentajeDePago,
                 },
-                Alumnos = turnoModel.Alumnos?.Select(ta => new TurnosAlumnos
+                Alumnos = turnoModel.TurnoAlumno?.Select(ta => new TurnoAlumno
                 {
                     TurnoId = ta.TurnoId,
                     AlumnoId = ta.AlumnoId,
@@ -113,8 +114,9 @@ namespace InterfaceAdapter_Repository
                         Observaciones = ta.Alumno.Observaciones,
                         NroTelefono = ta.Alumno.NroTelefono
                     }
-                }).ToList() ?? new List<TurnosAlumnos>(),
+                }).ToList() ?? new List<TurnoAlumno>(),
                 Capacidad = turnoModel.Capacidad,
+                Disponibilidad = turnoModel.Capacidad - (turnoModel.TurnoAlumno?.Count() ?? 0),
             }).ToList();
         }
 
@@ -124,7 +126,8 @@ namespace InterfaceAdapter_Repository
             {
                 HorarioId = turno.HorarioId,
                 InstructorId = turno.InstructorId,
-                Capacidad = turno.Capacidad
+                Capacidad = turno.Capacidad,
+                Disponibilidad = turno.Capacidad - (turno.Alumnos.Count()),
             };
 
             await _dbContext.AddAsync(turnoModel);
@@ -139,7 +142,7 @@ namespace InterfaceAdapter_Repository
             var turnoModel = await _dbContext.Turnos
                 .Include(t => t.Horario)
                 .Include(t => t.Instructor)
-                .Include(t => t.Alumnos)
+                .Include(t => t.TurnoAlumno)
                 .FirstOrDefaultAsync(t => t.Id == id);
 
             if (turnoModel != null)

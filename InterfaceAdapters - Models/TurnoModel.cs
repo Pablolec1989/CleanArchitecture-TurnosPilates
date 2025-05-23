@@ -14,7 +14,8 @@ namespace InterfaceAdapters___Models
         public int HorarioId { get; set; }
         public int? InstructorId { get; set; }
         public int Capacidad { get; set; }
-        public List<TurnoAlumnoModel>? Alumnos { get; set; }
+        public int Disponibilidad { get; set; }
+        public virtual ICollection<TurnoAlumnoModel>? TurnoAlumno { get; set; } = [];
 
         // Propiedades de navegación
         [ForeignKey("HorarioId")]

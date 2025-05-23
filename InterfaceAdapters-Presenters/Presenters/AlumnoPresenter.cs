@@ -17,7 +17,7 @@ namespace InterfaceAdapters_Presenters.Presenters
             {
                 Id = a.Id,
                 NombreCompleto = $"{a.Nombre} {a.Apellido}",
-                Turnos = a.Turnos?.Select(ta => new TurnosAlumnos
+                Turnos = a.Turnos?.Select(ta => new TurnoAlumno
                 {
                     Turno = ta.Turno != null ? new Turno
                     {
@@ -27,7 +27,7 @@ namespace InterfaceAdapters_Presenters.Presenters
                             Hora = ta.Turno.Horario.Hora,
                         }
                     }  : null
-                }).ToList() ?? new List<TurnosAlumnos>(),
+                }).ToList() ?? new List<TurnoAlumno>(),
             });
         }
     }

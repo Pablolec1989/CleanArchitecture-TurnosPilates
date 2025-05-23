@@ -6,6 +6,10 @@ namespace InterfaceAdapters_Data
 {
     public class AppDbContext : DbContext
     {
+        public AppDbContext()
+        {
+            
+        }
         public AppDbContext(DbContextOptions<AppDbContext> options)
             : base(options)
         { }
@@ -16,6 +20,7 @@ namespace InterfaceAdapters_Data
         public DbSet<TurnoModel> Turnos { get; set; }
         public DbSet<TurnoAlumnoModel> TurnosAlumnos { get; set; }
         public DbSet<TarifaModel> Tarifas { get; set; }
+        public DbSet<PagoAlumnoModel> PagoAlumno { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -37,6 +42,7 @@ namespace InterfaceAdapters_Data
                 entity.Property(a => a.NroTelefono)
                     .IsRequired()
                     .HasMaxLength(20);
+
             });
 
             // Configuración de InstructorModel
@@ -67,7 +73,7 @@ namespace InterfaceAdapters_Data
 
                 entity.Property(h => h.Dia)
                     .IsRequired()
-                    .HasMaxLength(15);
+                    .HasMaxLength(10);
 
                 entity.Property(h => h.Hora)
                     .IsRequired()
@@ -79,8 +85,7 @@ namespace InterfaceAdapters_Data
             {
                 entity.ToTable("Turno");
 
-                entity.Property(t => t.Capacidad)
-                    .IsRequired();
+                entity.Property(t => t.Capacidad);
 
                 // Relación con Instructor
                 entity.HasOne(t => t.Instructor)
@@ -95,28 +100,7 @@ namespace InterfaceAdapters_Data
                     .OnDelete(DeleteBehavior.Restrict);
             });
 
-            // Configuración de TurnoAlumnoModel
-            modelBuilder.Entity<TurnoAlumnoModel>(entity =>
-            {
-                entity.ToTable("TurnoAlumno");
-
-                // Clave primaria compuesta
-                entity.HasKey(ta => new { ta.AlumnoId, ta.TurnoId });
-
-                // Relación con Alumno
-                entity.HasOne(ta => ta.Alumno)
-                    .WithMany(a => a.Turnos)
-                    .HasForeignKey(ta => ta.AlumnoId)
-                    .OnDelete(DeleteBehavior.Cascade);
-
-                // Relación con Turno
-                entity.HasOne(ta => ta.Turno)
-                    .WithMany(t => t.Alumnos)
-                    .HasForeignKey(ta => ta.TurnoId)
-                    .OnDelete(DeleteBehavior.Cascade);
-            });
-
-            // Configurar nombres de columnas FK explícitamente
+            // Configurar nombres de columnas FK explícitamente en Turno
             modelBuilder.Entity<TurnoModel>()
                 .Property(t => t.InstructorId)
                 .HasColumnName("InstructorId");
@@ -124,6 +108,28 @@ namespace InterfaceAdapters_Data
             modelBuilder.Entity<TurnoModel>()
                 .Property(t => t.HorarioId)
                 .HasColumnName("HorarioId");
+
+            //Configuracion de TurnoAlumno
+            modelBuilder.Entity<TurnoAlumnoModel>(entity =>
+            {
+                entity.ToTable("TurnoAlumno");
+                entity.HasKey(ta => new { ta.AlumnoId, ta.TurnoId })
+                .HasName("PK_TurnoAlumno"); // Clave compuesta
+
+                // Relación con Alumno
+                entity.HasOne(ta => ta.Alumno)
+                      .WithMany(a => a.TurnoAlumno)
+                      .HasForeignKey(ta => ta.AlumnoId)
+                      .HasConstraintName("FK_TurnoAlumno_Alumno")
+                      .OnDelete(DeleteBehavior.Cascade);
+
+                // Relación con Turno
+                entity.HasOne(ta => ta.Turno)
+                      .WithMany(t => t.TurnoAlumno)
+                      .HasForeignKey(ta => ta.TurnoId)
+                      .HasConstraintName("FK_TurnoAlumno_Alumno")
+                      .OnDelete(DeleteBehavior.Cascade);
+            });
 
             // Configuracion de Tarifa
             modelBuilder.Entity<TarifaModel>(entity =>
@@ -135,6 +141,30 @@ namespace InterfaceAdapters_Data
                 entity.Property(t => t.Precio)
                 .HasColumnType("decimal(18,2)").IsRequired();
             });
+
+            // Configuracion de PagoAlumno
+            modelBuilder.Entity<PagoAlumnoModel>(entity =>
+            {
+                entity.ToTable("PagoAlumno");
+                entity.HasKey(pa => pa.AlumnoId);
+
+                entity.Property(pa => pa.Monto)
+                    .HasColumnType("decimal(18,2)")
+                    .IsRequired();
+
+                // Configuración de la relación 1:1 con Alumno
+                entity.HasOne(pa => pa.Alumno)          
+                      .WithOne()                       
+                      .HasForeignKey<PagoAlumnoModel>(pa => pa.AlumnoId) // AlumnoId en PagoAlumno es la FK y PK
+                      .OnDelete(DeleteBehavior.Cascade);
+
+                // Configuración de la relación 1:M con Tarifa (un PagoAlumno se basa en UNA Tarifa)
+                entity.HasOne(pa => pa.Tarifa)
+                      .WithMany()
+                      .HasForeignKey(pa => pa.TarifaId)
+                      .OnDelete(DeleteBehavior.Restrict);
+            });
+
         }
     }
 }

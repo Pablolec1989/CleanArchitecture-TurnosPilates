@@ -1256,6 +1256,10 @@
             "type": "integer",
             "format": "int32"
           },
+          "disponibilidad": {
+            "type": "integer",
+            "format": "int32"
+          },
           "alumnos": {
             "type": "array",
             "items": {

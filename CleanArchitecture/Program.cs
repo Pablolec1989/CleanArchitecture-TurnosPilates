@@ -2,6 +2,7 @@ using ApplicationLayer;
 using ApplicationLayer.AlumnoService;
 using ApplicationLayer.HorarioService;
 using ApplicationLayer.InstructorService;
+using ApplicationLayer.PagoAlumnoService;
 using ApplicationLayer.TarifaService;
 using ApplicationLayer.TurnoService;
 using CleanArchitecture.Middlewares;
@@ -20,6 +21,12 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Dependencias
+builder.Services.AddDbContext<AppDbContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+});
+
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 
@@ -37,13 +44,6 @@ builder.Services.AddValidatorsFromAssemblyContaining<HorarioValidator>();
 builder.Services.AddValidatorsFromAssemblyContaining<TurnoValidator>();
 builder.Services.AddFluentValidationAutoValidation();
 builder.Services.AddFluentValidationClientsideAdapters();
-
-
-// Dependencias
-builder.Services.AddDbContext<AppDbContext>(options =>
-{
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
-});
 
 //Alumnos
 builder.Services.AddScoped<GetByIdAlumnoService<Alumno, AlumnoEnTurnoViewModel>>();
@@ -97,6 +97,11 @@ builder.Services.AddScoped<UpdateTarifaService<TarifaRequestDTO>>();
 builder.Services.AddScoped<DeleteTarifaService>();
 builder.Services.AddScoped<ICrudRepository<Tarifa>, RepositoryTarifa>();
 builder.Services.AddScoped<IMapper<TarifaRequestDTO, Tarifa>, TarifaRequestMapper>();
+
+//PagoAlumno
+builder.Services.AddScoped<PagoAlumnoService>();
+builder.Services.AddScoped<IPagoAlumnoService<PagoAlumno>, PagoAlumnoService>();
+builder.Services.AddScoped<IPagoAlumnoRepository, PagoAlumnoRepository>();
 
 var app = builder.Build();
 
