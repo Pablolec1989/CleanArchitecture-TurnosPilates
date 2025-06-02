@@ -1,0 +1,1 @@
+API creada en .NET 8 para gestionar turnos de un centro de Pilates. Permite un ABM de alumnos, instructores, horarios y turnos. Además posee la capacidad de gestionar pagos de acuerdo al porcentaje acordado con el instructor, definir los cupos de un turno y calcular su capacidad. Se encuentra en desarrollo la etapa de Pagos/Tarifas
